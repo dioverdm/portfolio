@@ -1,9 +1,19 @@
+:root {
+  --black-intense: #111111;
+  --black: #222222;
+  --black-light: #333333;
+  --gray: #999999;
+  --withe: #dddddd;
+  --red-cherry: #f53b57;
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 62.5%;
+  scroll-behavior:smooth;
+  color: var(--withe);
 }
 
 a {
@@ -13,4 +23,29 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* scroll */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--black-intense);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--red-cherry);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--withe);
+}
+/* scroll */
+
+.space-lateral {
+  padding: 0 24px;
 }

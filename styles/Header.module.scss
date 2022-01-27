@@ -1,0 +1,60 @@
+@import 'mixins';
+
+.header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--black-intense);
+  flex-direction: column;
+  gap: 15px;
+
+  &__container {
+    text-align: center;
+
+    h1 {
+      font-size: 4rem;
+      line-height: 4.6rem;
+      margin: 0 0 16px;
+    }
+
+    p {
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      color: var(--red-cherry);
+      opacity: 1;
+    }
+  }
+}
+
+@include media-query(medium) {
+  .header {
+    &__container {
+      h1 {
+        font-size: 5rem;
+        line-height: 6.6rem;
+      }
+
+      p {
+        font-size: 2rem;
+        line-height: 3rem;
+      }
+    }
+  }
+}
+
+@include media-query(large) {
+  .header {
+    &__container {
+      h1 {
+        font-size: 7rem;
+        line-height: 7.6rem;
+      }
+
+      p {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+      }
+    }
+  }
+}
