@@ -9,7 +9,7 @@ const Project = ({ title, type, body, url, bg, badge }) => {
     <article className={card}>
       <a href={url} target="_blank" rel="noreferrer noopener">
         <div className={card__img}>
-          <div className={`${img} ${bg}`}></div>
+          <img className={img} src={bg} />
         </div>
       </a>
       <div className={card__content}>
@@ -17,13 +17,13 @@ const Project = ({ title, type, body, url, bg, badge }) => {
         <h3>{title}</h3>
         <p>{body}</p>
         <div className={card__lang}>
-          {badge.map(({ text, color, logo, width }) => (
+          {badge.map(({ text, color, logo, width, fontColor }) => (
             <Badge
               key={text}
               name={text}
               logo={logo}
               color={color}
-              fontColor="white"
+              fontColor={fontColor}
               alt={text}
               width={width}
               height="20"
