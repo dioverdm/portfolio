@@ -5,8 +5,9 @@ const header = () => {
   return (
     <div className={`${header}  space-lateral`} id="home">
       <div className={header__container}>
-        <h1>Manuel Montaño Sáenz</h1>
-        <p>Hola, soy Desarrollador frontend Frontend.</p>
+        <p>¡Hola! me llamo,</p>
+        <h1>José M Montaño</h1>
+        <p>Frontend Developer</p>
       </div>
     </div>
   );
