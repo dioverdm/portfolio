@@ -7,7 +7,7 @@ export default function handler(req, res) {
       type: 'cliente',
       body: 'Esta pagina web fue desarrollada con el fin de dar a conocer la empresa, canalizar clientes por medio de un formulario y números telefónicos. Se realizo una planificación, diseño previo y luego la realización del código',
       url: 'https://www.audiservicios.com.co/',
-      bg: 'audiservicios',
+      bg: '/image/@udiservicios.png',
       badge: {
         html: { text: 'HTML5', color: 'E34F26', logo: 'html5', width: '65' },
         css: { text: 'CSS3', color: '1572B6', logo: 'css3', width: '57' },
@@ -27,23 +27,45 @@ export default function handler(req, res) {
       url: '',
       bg: '',
       badge: {
-        NEXT: {
+        next: {
           text: 'NEXT.JS',
           color: '000000',
           logo: 'next.js',
           width: '75',
         },
+        css: { text: 'CSS3', color: '1572B6', logo: 'css3', width: '57' },
+        scss: {
+          text: 'SASS',
+          color: 'CC6699',
+          logo: 'sass',
+          width: '59',
+        },
       },
       key: 2,
     },
     three: {
-      title: '',
-      type: '',
-      body: '',
-      url: '',
-      bg: '',
-      badge: '',
-      key: 2,
+      title: 'Prueba Técnica Landing Page',
+      type: 'proyecto personal',
+      body: 'Este proyecto es el resultado de una prueba técnica.',
+      url: 'https://mooenz.github.io/prueba-tecnica-landin-page/',
+      bg: '/image/prueba-tecnica-landing-page.jpg',
+      badge: {
+        html: { text: 'HTML5', color: 'E34F26', logo: 'html5', width: '65' },
+        scss: {
+          text: 'SASS',
+          color: 'CC6699',
+          logo: 'sass',
+          width: '59',
+        },
+        scss: {
+          text: 'JAVASCRIPT',
+          color: 'F7DF1E',
+          logo: 'javascript',
+          width: '95',
+          fontColor: '222',
+        },
+      },
+      key: 3,
     },
     four: {
       title: '',
@@ -51,8 +73,17 @@ export default function handler(req, res) {
       body: '',
       url: '',
       bg: '',
-      badge: '',
-      key: 2,
+      badge: {},
+      key: 4,
+    },
+    five: {
+      title: '',
+      type: '',
+      body: '',
+      url: '',
+      bg: '',
+      badge: {},
+      key: 5,
     },
   });
 }
