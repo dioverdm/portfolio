@@ -2,12 +2,13 @@ import style from '../styles/About.module.scss';
 import Image from 'next/image';
 
 const About = () => {
-  const { about, about__container, about__left, social__media, about__right } =
+  const { about, about__container, about__left, social__media, about__right, bg__img } =
     style;
   return (
     <section className={about} id="about">
       <div className={`${about__container} space-lateral`}>
         <div className={about__left}>
+          <div className={bg__img}></div>
           <Image
             src="/image/jose-manuel.png"
             height="150px"
