@@ -5,7 +5,7 @@ export default function handler(req, res) {
     one: {
       title: '@udiservicios s.a.s',
       type: 'cliente',
-      body: 'Esta pagina web fue desarrollada con el fin de dar a conocer la empresa, canalizar clientes por medio de un formulario y números telefónicos. Se realizo una planificación, diseño previo y luego la realización del código',
+      body: 'Esta pagina web fue desarrollada con el fin de dar a conocer la empresa, canalizar clientes por medio de un formulario y números telefónicos.',
       url: 'https://www.audiservicios.com.co/',
       bg: '/image/@udiservicios.png',
       badge: {
