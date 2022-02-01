@@ -4,7 +4,7 @@ export const useFetch = () => {
   const [datos, useDatos] = useState([]);
 
   useEffect(() => {
-    consumirApi('http://localhost:3000/api/data');
+    consumirApi('https://www.mooenz.me/api/data');
   },[]);
 
   const consumirApi = async (URL) => {
