@@ -45,7 +45,7 @@ export default function handler(req, res) {
     },
     three: {
       title: 'Prueba Técnica Landing Page',
-      type: 'proyecto personal',
+      type: 'entrevista',
       body: 'Este proyecto es el resultado de una prueba técnica.',
       url: 'https://mooenz.github.io/prueba-tecnica-landin-page/',
       bg: '/image/prueba-tecnica-landing-page.jpg',
@@ -57,7 +57,7 @@ export default function handler(req, res) {
           logo: 'sass',
           width: '59',
         },
-        scss: {
+        javascript: {
           text: 'JAVASCRIPT',
           color: 'F7DF1E',
           logo: 'javascript',
