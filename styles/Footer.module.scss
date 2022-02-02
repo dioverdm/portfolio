@@ -1,4 +1,4 @@
-@import "mixins";
+@import 'mixins';
 
 .footer {
   background-color: var(--withe);
@@ -6,18 +6,17 @@
   font-weight: 400;
   text-align: center;
   padding: 20px 0;
+  color: var(--black-intense);
 
   &__content {
-    p,
-    span,
-    b {
-      color: var(--black-intense);
-    }
-
-    a:hover b:hover {
-      color: var(--red-cherry);
-      text-decoration: underline;
-      transition-duration: 1s;
+    .strong {
+      font-weight: 700;
+      cursor: pointer;
+      &:hover {
+        color: var(--red-cherry);
+        text-decoration: underline;
+        transition-duration: 1s;
+      }
     }
   }
 }

@@ -1,11 +1,11 @@
 import Head from 'next/head';
+import { Toaster } from 'react-hot-toast';
 
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
-import Proyectos from '../components/Projects';
-import Footer from '../components/Footer';
 import About from '../components/About';
 import Projects from '../components/Projects';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -21,6 +21,7 @@ export default function Home() {
       <Header />
       <About />
       <Projects />
+      <Toaster position="bottom-center" reverseOrder={false} />
       <Footer />
     </div>
   );

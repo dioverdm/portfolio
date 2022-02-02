@@ -1,8 +1,10 @@
 import style from '../styles/Navbar.module.scss';
 import Link from 'next/link';
+import { useClickBoard } from '../hooks/useClickBoard';
 
 const Navbar = () => {
-  const { nav, nav__container, menu, logo, nav__links, nav__burger } = style;
+  const { nav, nav__container, menu, logo, nav__links, nav__burger, button } =
+    style;
 
   return (
     <div className={nav}>
@@ -26,9 +28,13 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="mailto:joss92821@hotmail.com">
-                <a title="Portafolio">Contactame</a>
-              </Link>
+              <button
+                className={button}
+                title="joss92821@hotmail.com"
+                onClick={() => useClickBoard()}
+              >
+                Contactarme
+              </button>
             </li>
           </ul>
         </div>
