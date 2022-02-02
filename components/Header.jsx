@@ -1,14 +1,19 @@
 import style from '../styles/Header.module.scss';
+import Link from 'next/dist/client/link';
 
 const header = () => {
-  const { header, header__container } = style;
+  const { header, header__title, downArrow__container, downArrow } = style;
   return (
     <div className={`${header}  space-lateral`} id="home">
-      <div className={header__container}>
-        <p></p>
-        <h1>¡Hola, me llamo<br /><span>José M Montaño</span></h1>
-        <p>Frontend Developer</p>
+      <div>
+        <h1 className={header__title}>José M Montaño</h1>
       </div>
+
+      <Link rel="stylesheet" href="#about">
+        <div className={downArrow__container}>
+          <a className={downArrow}></a>
+        </div>
+      </Link>
     </div>
   );
 };
