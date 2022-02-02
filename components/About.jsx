@@ -1,21 +1,41 @@
 import style from '../styles/About.module.scss';
 import Image from 'next/image';
+import { useState } from 'react';
 
 const About = () => {
-  const { about, about__container, about__left, social__media, about__right, bg__img } =
-    style;
+  const {
+    about,
+    about__container,
+    about__image,
+    avatar,
+    img,
+    social__media,
+    icon,
+    linkedin,
+    twitter,
+    github,
+    about__me,
+    title,
+    tablist,
+    body,
+    strong,
+    btnDownload,
+  } = style;
+
   return (
     <section className={about} id="about">
       <div className={`${about__container} space-lateral`}>
-        <div className={about__left}>
-          <div className={bg__img}></div>
-          <Image
-            src="/image/jose-manuel.png"
-            height="150px"
-            width="150px"
-            alt="foto de Jose Manuel Montaño Sáenz"
-            className="img"
-          />
+        <div className={about__image}>
+          <div className={avatar}>
+            <Image
+              src="/image/jose-manuel.png"
+              height="200px"
+              width="200px"
+              alt="foto de Jose Manuel Montaño Sáenz"
+              className={img}
+            />
+          </div>
+
           <div className={social__media}>
             <a
               href="https://www.linkedin.com/in/mooenz"
@@ -23,7 +43,7 @@ const About = () => {
               target="_blank"
               rel="noreferrer noopener"
             >
-              <i className="fab fa-linkedin-in"></i>
+              <span className={`${icon} ${linkedin}`}></span>
             </a>
             <a
               href="https://twitter.com/MooenzDev"
@@ -31,7 +51,7 @@ const About = () => {
               target="_blank"
               rel="noreferrer noopener"
             >
-              <i className="fab fa-twitter"></i>
+              <span className={`${icon} ${twitter}`}></span>
             </a>
             <a
               href="https://github.com/Mooenz"
@@ -39,21 +59,27 @@ const About = () => {
               target="_blank"
               rel="noreferrer noopener"
             >
-              <i className="fab fa-github-alt"></i>
+              <span className={`${icon} ${github}`}></span>
             </a>
           </div>
         </div>
 
-        <div className={about__right}>
-          <h2>Sobre mí</h2>
-          <p>
-            <b>Soy maqueteador web</b> en constante aprendizaje para lograr un
-            puesto como Front-end.
+        <div className={about__me}>
+          <h2 className={title}>Sobre mí</h2>
+          <ul className={tablist}>
+            <li>Perfil</li>
+            <li>Estudios</li>
+            <li>Skills</li>
+          </ul>
+          <p className={body}>
+            <span className={strong}>Soy maquetador web</span> en constante
+            aprendizaje para lograr un puesto como Frontend. Me interesan
+            tecnologías como React o Vue.js. Busco un lugar ameno donde me
+            permitan seguir creciendo como Developer Frontend.
           </p>
-          <p>
-            Me interesan tecnologias como React o Vue.js. Busco un lugar ameno
-            donde me permitan seguir creciendo como Developer.
-          </p>
+          <a className={btnDownload} href="/Cv-José-M-Montaño.pdf" download>
+            Descargar CV
+          </a>
         </div>
       </div>
     </section>
