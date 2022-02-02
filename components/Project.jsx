@@ -2,14 +2,14 @@ import style from '../styles/Project.module.scss';
 import Badge from './Badge';
 
 const Project = ({ title, type, body, url, bg, badge }) => {
-  const { card, card__img, card__content, card__lang, img, audiservicios } =
+  const { card, card__img, card__content, card__lang, img} =
     style;
 
   return (
     <article className={card}>
       <a href={url} target="_blank" rel="noreferrer noopener">
         <div className={card__img}>
-          <img className={img} src={bg} />
+          <img className={img} src={bg ? bg:'/icons/default.svg'} />
         </div>
       </a>
       <div className={card__content}>
