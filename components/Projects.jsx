@@ -13,10 +13,6 @@ const Projects = () => {
         <div className={`${work__container} space-lateral`}>
           <div className={work__content}>
             <h2>Portafolio</h2>
-            <p>
-              Sean bienvenidos y espero que sea de su agrado todos mis
-              proyectos.
-            </p>
           </div>
           <div className={work__projects}>
             {datos.map(({ title, type, body, url, bg, badge, key }) => (

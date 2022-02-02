@@ -1,7 +1,7 @@
 @import 'mixins';
 
 .work {
-  background-color: var(--black-light);
+  background-color: var(--black-intense);
   padding: 100px 0;
 
   &__container {
@@ -13,17 +13,8 @@
       margin: 0 0 50px;
 
       h2 {
-        font-size: 2.5rem;
-        margin: 0 0 16px;
-      }
-
-      p {
-        font-size: 1.5rem;
-        line-height: 2.5rem;
-        letter-spacing: 0.05rem;
-        color: var(--gray);
-        max-width: 500px;
-        text-align: center;
+        font-size: 4rem;
+        margin: 0;
       }
     }
 
