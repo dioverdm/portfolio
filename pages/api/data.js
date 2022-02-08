@@ -21,10 +21,10 @@ export default function handler(req, res) {
       key: 1,
     },
     two: {
-      title: 'Portafolio Front-end',
+      title: 'Portafolio Frontendmentor',
       type: 'Proyecto Personal',
       body: 'Este es un buscador que recopila todos los retros concluidos del sitio Frontend Mentor. además están clasificados por Newbie y Junior.',
-      url: '',
+      url: 'https://github.com/Mooenz/portfolio-frontendmentor',
       bg: '',
       badge: {
         next: {
@@ -44,6 +44,29 @@ export default function handler(req, res) {
       key: 2,
     },
     three: {
+      title: 'Portafolio DevChallenges',
+      type: 'Proyecto Personal',
+      body: 'Este es un buscador que recopila todos los retros concluidos del sitio DevChallenges. Solo son proyectos pertenecientes a la categoría Responsive.',
+      url: 'https://github.com/Mooenz/portfolio-devchallenges',
+      bg: '',
+      badge: {
+        next: {
+          text: 'NEXT.JS',
+          color: '000000',
+          logo: 'next.js',
+          width: '75',
+        },
+        css: { text: 'CSS3', color: '1572B6', logo: 'css3', width: '57' },
+        scss: {
+          text: 'SASS',
+          color: 'CC6699',
+          logo: 'sass',
+          width: '59',
+        },
+      },
+      key: 3,
+    },
+    four: {
       title: 'Prueba Técnica Landing Page',
       type: 'entrevista',
       body: 'Este proyecto es el resultado de una prueba técnica.',
@@ -65,15 +88,6 @@ export default function handler(req, res) {
           fontColor: '222',
         },
       },
-      key: 3,
-    },
-    four: {
-      title: '',
-      type: '',
-      body: '',
-      url: '',
-      bg: '',
-      badge: {},
       key: 4,
     },
     five: {
