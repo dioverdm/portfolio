@@ -2,6 +2,10 @@ import style from '../styles/About.module.scss';
 import Image from 'next/image';
 import { useState } from 'react';
 
+import StudyList from './StudyList';
+import Skills from './Skills';
+import SocialMedia from './SocialMedia';
+
 const About = () => {
   const {
     about,
@@ -9,18 +13,23 @@ const About = () => {
     about__image,
     avatar,
     img,
-    social__media,
-    icon,
-    linkedin,
-    twitter,
-    github,
     about__me,
     title,
     tablist,
+    tap,
+    tapActive,
     body,
+    paragraph,
+    bodyActive,
     strong,
     btnDownload,
   } = style;
+
+  const [tapState, setTapState] = useState(1);
+
+  const tapToggle = (id) => {
+    setTapState(id);
+  };
 
   return (
     <section className={about} id="about">
@@ -35,51 +44,54 @@ const About = () => {
               className={img}
             />
           </div>
-
-          <div className={social__media}>
-            <a
-              href="https://www.linkedin.com/in/mooenz"
-              title="Linkedin"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <span className={`${icon} ${linkedin}`}></span>
-            </a>
-            <a
-              href="https://twitter.com/MooenzDev"
-              title="Twitter"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <span className={`${icon} ${twitter}`}></span>
-            </a>
-            <a
-              href="https://github.com/Mooenz"
-              title="Github"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <span className={`${icon} ${github}`}></span>
-            </a>
-          </div>
+          <SocialMedia />
         </div>
 
         <div className={about__me}>
           <h2 className={title}>Sobre mí</h2>
           <ul className={tablist}>
-            <li>Perfil</li>
-            <li>Estudios</li>
-            <li>Skills</li>
+            <li
+              className={tapState === 1 ? `${tapActive} ${tap}` : tap}
+              onClick={() => tapToggle(1)}
+            >
+              Perfil
+            </li>
+            <li
+              className={tapState === 2 ? `${tapActive} ${tap}` : tap}
+              onClick={() => tapToggle(2)}
+            >
+              Estudios
+            </li>
+            <li
+              className={tapState === 3 ? `${tapActive} ${tap}` : tap}
+              onClick={() => tapToggle(3)}
+            >
+              Skills
+            </li>
           </ul>
-          <p className={body}>
-            <span className={strong}>Soy maquetador web</span> en constante
-            aprendizaje para lograr un puesto como Frontend. Me interesan
-            tecnologías como React o Vue.js. Busco un lugar ameno donde me
-            permitan seguir creciendo como Developer Frontend.
-          </p>
-          <a className={btnDownload} href="/Cv-José-M-Montaño.pdf" download>
-            Descargar CV
-          </a>
+          <div className={tapState === 1 ? `${body} ${bodyActive}` : body}>
+            <p className={paragraph}>
+              <span className={strong}>Soy maquetador web</span> en constante
+              aprendizaje para lograr un puesto como Frontend. Me interesan
+              tecnologías como React o Next js.
+            </p>
+
+            <p>
+              Busco un lugar ameno donde me permitan seguir creciendo como
+              Developer Frontend.
+            </p>
+            <button className={btnDownload}>
+              <a href="/Cv-José-M-Montaño.pdf" download>
+                Descargar CV
+              </a>
+            </button>
+          </div>
+          <div className={tapState === 2 ? `${body} ${bodyActive}` : body}>
+            <StudyList />
+          </div>
+          <div className={tapState === 3 ? `${body} ${bodyActive}` : body}>
+            <Skills />
+          </div>
         </div>
       </div>
     </section>

@@ -1,19 +1,20 @@
 @import 'mixins';
 
 .about {
-  position: relative;
+  background: var(--black);
   width: 100%;
   min-height: 70vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  background: var(--black);
+  justify-content: center;
+  position: relative;
 
   &__container {
     display: grid;
     place-items: center;
-    grid-template-rows: repeat(2, 1fr);
+    gap: 32px;
     margin: 100px 0;
+    width: 100%;
   }
 
   &__image {
@@ -23,6 +24,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     .avatar {
       background-color: var(--black-intense);
       width: 200px;
@@ -34,41 +36,11 @@
         object-fit: cover;
       }
     }
-
-    .social__media {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      align-items: center;
-      width: 100%;
-      margin: 32px 0 0;
-
-      .icon {
-        display: inline-block;
-        height: 24px;
-        width: 24px;
-        transition-duration: 0.5s;
-
-        &:hover {
-          transform: scale(0.9);
-        }
-      }
-
-      .linkedin {
-        background: url('/icons/linkedin.svg') center/contain no-repeat;
-      }
-
-      .twitter {
-        background: url('/icons/twitter.svg') center/contain no-repeat;
-      }
-
-      .github {
-        background: url('/icons/github.svg') center/contain no-repeat;
-      }
-    }
   }
 
   &__me {
+    width: 100%;
+
     .title {
       font-size: 4rem;
       margin: 0 0 24px;
@@ -76,17 +48,31 @@
     .tablist {
       font-size: 2rem;
       font-weight: 700;
-      list-style: none;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      margin: 0 0 32px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       gap: 16px;
+      margin: 0 0 32px;
 
-      li {
+      .tap {
         padding: 8px 16px;
         cursor: pointer;
+        border: 2px solid transparent;
+        text-align: center;
+
+        &Active {
+          border-bottom: 2px solid var(--red-cherry);
+          color: var(--red-cherry);
+          transition-duration: 0.5s;
+        }
+
+        &:hover {
+          color: var(--red-cherry);
+        }
       }
+    }
+
+    .paragraph {
+      margin: 0 0 24px;
     }
 
     .body {
@@ -94,7 +80,12 @@
       line-height: 2.5rem;
       letter-spacing: 0.1rem;
       color: var(--gray);
-      margin: 0 0 24px;
+      display: none;
+      width: 100%;
+
+      &Active {
+        display: inline-block;
+      }
 
       .strong {
         font-weight: 700;
@@ -103,33 +94,41 @@
     }
 
     .btnDownload {
+      background: var(--red-cherry);
+      color: var(--withe);
       font-size: 2rem;
       font-weight: 700;
-      background: var(--red-cherry);
       padding: 8px 16px;
       border-radius: 10px;
+      border: none;
+      margin: 32px 0 0;
 
       &:hover {
-        opacity: 0.7;
+        opacity: 0.9;
       }
     }
   }
-}
 
-@include media-query(medium) {
-  .about {
+  @include media-query(medium) {
     &__container {
       width: 1200px;
-      margin: auto;
-      padding: 0;
+      margin: 100px auto;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: auto;
       place-content: center;
       gap: 0;
     }
+
+    &__me {
+      .tablist {
+        display: flex;
+      }
+    }
+  }
+
+  @include media-query(large) {
+    &__container {
+      padding: 0;
+    }
   }
 }
-
-// @include media-query(large) {
-
-// }
