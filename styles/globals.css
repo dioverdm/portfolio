@@ -2,12 +2,18 @@
   --black-intense: #111111;
   --black: #222222;
   --black-light: #333333;
-  --gray: #999999;
-  --withe: #dddddd;
+  --gray: #bbb;
+  --withe: #eee;
   --red-cherry: #f53b57;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;800&family=Poppins:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
 html,
 body {
@@ -22,10 +28,8 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+li {
+  list-style: none;
 }
 
 /* scroll */
