@@ -1,0 +1,10 @@
+[
+  { "name": "html", "icon": "./icons/html5.svg", "id": 1 },
+  { "name": "css", "icon": "./icons/css3.svg", "id": 2 },
+  { "name": "scss", "icon": "./icons/scss.svg", "id": 3 },
+  { "name": "tailwind css", "icon": "./icons/tailwindcss.svg", "id": 4 },
+  { "name": "bootstrap", "icon": "./icons/bootstrap.svg", "id": 5 },
+  { "name": "javascript", "icon": "./icons/javascript.svg", "id": 6 },
+  { "name": "react.js", "icon": "./icons/reactjs.svg", "id": 7 },
+  { "name": "next.js", "icon": "./icons/nextjs.svg", "id": 8 }
+]

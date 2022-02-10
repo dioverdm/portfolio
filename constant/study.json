@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Curso de Asincronismo con JavaScript",
+    "from": "Platzi",
+    "state": true,
+    "id": 1,
+    "url": "https://platzi.com/p/Mooenz/curso/1789-asincronismo-js/diploma/detalle/"
+  },
+  {
+    "name": "Curso de Fundamentos de Node.js",
+    "from": "Plazi",
+    "state": true,
+    "id": 0,
+    "url": "https://platzi.com/p/Mooenz/curso/1759-fundamentos-node/diploma/detalle/"
+  },
+  {
+    "name": "Curso de Frontend Developer",
+    "from": "Platzi",
+    "state": true,
+    "id": 2,
+    "url": "https://platzi.com/p/Mooenz/curso/2467-frontend-developer/diploma/detalle/"
+  },
+  {
+    "name": "Curso Definitivo de HTML y CSS",
+    "from": "Platzi",
+    "state": true,
+    "id": 3,
+    "url": "https://platzi.com/p/Mooenz/curso/2008-html-css/diploma/detalle/"
+  },
+  {
+    "name": "Ingeniero de Sistemas",
+    "from": "U. Cooperativa de Colombia",
+    "state": true,
+    "id": 4,
+    "url": ""
+  },
+  {
+    "name": "Rect.js",
+    "from": "Documentación y YouTube",
+    "state": false,
+    "id": 5,
+    "url": ""
+  },
+  {
+    "name": "Next.js",
+    "from": "Documentación y YouTube",
+    "state": false,
+    "id": 6,
+    "url": ""
+  },
+  {
+    "name": "Node.js",
+    "from": "Plazi y Youtube",
+    "state": false,
+    "id": 7,
+    "url": ""
+  }
+]
