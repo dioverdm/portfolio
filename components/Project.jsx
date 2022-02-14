@@ -33,7 +33,6 @@ const Project = ({ title, type, body, url, bg, badge }) => {
               fontColor={fontColor}
               alt={text}
               width={width}
-              height="20"
             />
           ))}
         </div>

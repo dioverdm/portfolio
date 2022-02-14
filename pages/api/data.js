@@ -21,7 +21,7 @@ export default function handler(req, res) {
       key: 1,
     },
     two: {
-      title: 'Portafolio Frontendmentor',
+      title: 'Portafolio Frontend Mentor',
       type: 'Proyecto Personal',
       body: 'Este es un buscador que recopila todos los retros concluidos del sitio Frontend Mentor. además están clasificados por Newbie y Junior.',
       url: 'https://github.com/Mooenz/portfolio-frontendmentor',
@@ -33,7 +33,6 @@ export default function handler(req, res) {
           logo: 'next.js',
           width: '75',
         },
-        css: { text: 'CSS3', color: '1572B6', logo: 'css3', width: '57' },
         scss: {
           text: 'SASS',
           color: 'CC6699',
@@ -56,7 +55,6 @@ export default function handler(req, res) {
           logo: 'next.js',
           width: '75',
         },
-        css: { text: 'CSS3', color: '1572B6', logo: 'css3', width: '57' },
         scss: {
           text: 'SASS',
           color: 'CC6699',
@@ -67,13 +65,12 @@ export default function handler(req, res) {
       key: 3,
     },
     four: {
-      title: 'Prueba Técnica Landing Page',
-      type: 'entrevista',
-      body: 'Este proyecto es el resultado de una prueba técnica.',
+      title: 'Landing Page',
+      type: 'prueba técnica',
+      body: 'Este proyecto es el resultado de una prueba técnica. El objetivo de esta prueba era mostrar el nivel de ',
       url: 'https://mooenz.github.io/prueba-tecnica-landin-page/',
       bg: '/image/prueba-tecnica-landing-page.jpg',
       badge: {
-        html: { text: 'HTML5', color: 'E34F26', logo: 'html5', width: '65' },
         scss: {
           text: 'SASS',
           color: 'CC6699',
@@ -91,12 +88,25 @@ export default function handler(req, res) {
       key: 4,
     },
     five: {
-      title: '',
-      type: '',
-      body: '',
-      url: '',
-      bg: '',
-      badge: {},
+      title: 'Frontend UX',
+      type: 'prueba técnica',
+      body: 'Esta prueba se realizo con el objetivo de demostrar la capacidad de replicar un sitio partiendo de un diseño previo.',
+      url: 'https://mooenz.github.io/prueba-frontend-ux/',
+      bg: '/image/prueba-tecnica-frontend-ux.jpg',
+      badge: {
+        react: {
+          text: 'CREATE REACT APP',
+          color: '09D3AC',
+          logo: 'Create React App',
+          width: '137',
+        },
+        scss: {
+          text: 'SASS',
+          color: 'CC6699',
+          logo: 'sass',
+          width: '59',
+        },
+      },
       key: 5,
     },
   });

@@ -7,7 +7,7 @@ const Badge = ({ name, logo, color, fontColor, alt, width, height }) => {
         }`}
         alt={alt}
         width={width}
-        height={height}
+        height={height || 20}
       />
     </>
   );
