@@ -1,5 +1,8 @@
-import data from '../constant/study.json';
-import styles from '../styles/StudyList.module.scss';
+//Constants
+import data from '../../constant/study.json';
+
+//Styles
+import styles from './StudyList.module.scss';
 
 const StudyList = () => {
   const { section, title, body, strong, disapprove } = styles;

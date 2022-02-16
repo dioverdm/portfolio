@@ -1,10 +1,13 @@
-import style from '../styles/About.module.scss';
 import Image from 'next/image';
 import { useState } from 'react';
 
-import StudyList from './StudyList';
-import Skills from './Skills';
-import SocialMedia from './SocialMedia';
+//Components
+import StudyList from '../StudyList';
+import Skills from '../Skills';
+import SocialMedia from '../SocialMedia';
+
+//styles
+import style from './About.module.scss';
 
 const About = () => {
   const {

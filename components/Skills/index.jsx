@@ -1,5 +1,8 @@
-import data from '../constant/skills.json';
-import styles from '../styles/Skills.module.scss';
+// Constants
+import data from '../../constant/skills.json';
+
+//Styles
+import styles from './Skills.module.scss';
 
 const Skills = () => {
   const { skills, skills__body, skills__name, skills__img } = styles;

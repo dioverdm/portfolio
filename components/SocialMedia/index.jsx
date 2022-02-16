@@ -1,4 +1,5 @@
-import style from '../styles/SocialMedia.module.scss';
+//Styles
+import style from './SocialMedia.module.scss';
 
 const SocialMedia = () => {
   const { social__media, icon, linkedin, twitter, github } = style;

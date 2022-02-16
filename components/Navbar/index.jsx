@@ -1,13 +1,18 @@
-import style from '../styles/Navbar.module.scss';
 import Link from 'next/link';
-import { useClickBoard } from '../hooks/useClickBoard';
+import {Nav} from './Navbar';
+
+//hooks
+import { useClickBoard } from '../../hooks/useClickBoard';
+
+//styles
+import style from './Navbar.module.scss';
 
 const Navbar = () => {
   const { nav, nav__container, menu, logo, nav__links, nav__burger, button } =
     style;
 
   return (
-    <div className={nav}>
+    <Nav>
       <nav className={`${nav__container} space-lateral`}>
         <span>
           <a className={logo} href="#home">
@@ -39,7 +44,7 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-    </div>
+    </Nav>
   );
 };
 

@@ -1,5 +1,5 @@
-import style from '../styles/Footer.module.scss';
-import { useClickBoard } from '../hooks/useClickBoard';
+import style from './Footer.module.scss';
+import { useClickBoard } from '../../hooks/useClickBoard';
 
 const Footer = () => {
   const { footer, footer__content, strong } = style;

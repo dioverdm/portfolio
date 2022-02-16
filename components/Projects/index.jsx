@@ -1,11 +1,15 @@
-import { useFetch } from '../hooks/useFetch';
-import Project from './Project';
-import style from '../styles/Projects.module.scss';
+import { useFetch } from '../../hooks/useFetch';
+
+//Components
+import Project from '../Project';
+
+//Styles
+import style from './Projects.module.scss';
 
 const Projects = () => {
   const { work, work__container, work__content, work__projects } = style;
 
-  const datos = Object.values(useFetch());
+  const datos = Object.values(useFetch('http://localhost:3000/api/data'));
 
   return (
     <div>

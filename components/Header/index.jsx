@@ -1,5 +1,7 @@
-import style from '../styles/Header.module.scss';
 import Link from 'next/dist/client/link';
+
+//Styles
+import style from './Header.module.scss';
 
 const header = () => {
   const { header, header__title, downArrow__container, downArrow } = style;

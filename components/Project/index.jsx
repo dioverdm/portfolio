@@ -1,5 +1,8 @@
-import style from '../styles/Project.module.scss';
-import Badge from './Badge';
+//component
+import Badge from '../Badge';
+
+//Styles
+import style from './Project.module.scss';
 
 const Project = ({ title, type, body, url, bg, badge }) => {
   const {
