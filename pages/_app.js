@@ -1,10 +1,13 @@
-import { createContext } from 'react';
-
 //Styles
-import '../styles/globals.css';
+import GlobalStyles from '../styles/GlobalStyles';
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <GlobalStyles />
+      <Component {...pageProps} />
+    </>
+  );
 }
 
 export default MyApp;
