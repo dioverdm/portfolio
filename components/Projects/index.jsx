@@ -4,37 +4,43 @@ import { useFetch } from '../../hooks/useFetch';
 import Project from '../Project';
 
 //Styles
-import style from './Projects.module.scss';
+import { Proyects, Container, Title, ProyectsList } from './styles';
 
-const Projects = () => {
-  const { work, work__container, work__content, work__projects } = style;
-
+const Projects = ({ data }) => {
   const datos = Object.values(useFetch('http://localhost:3000/api/data'));
+  
+  console.log(data)
 
   return (
-    <div>
-      <section className={work} id="work">
-        <div className={`${work__container} space-lateral`}>
-          <div className={work__content}>
-            <h2>Portafolio</h2>
-          </div>
-          <div className={work__projects}>
-            {datos.map(({ title, type, body, url, bg, badge, key }) => (
-              <Project
-                key={key}
-                title={title}
-                type={type}
-                body={body}
-                url={url}
-                bg={bg}
-                badge={Object.values(badge)}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-    </div>
+    <Proyects id="work">
+      <Container className="space-lateral">
+        <Title>Portafolio</Title>
+        <ProyectsList>
+          { datos.map(({ title, type, body, url, bg, badge, key }) => (
+            <Project
+              key={ key }
+              title={ title }
+              type={ type }
+              body={ body }
+              url={ url }
+              bg={ bg }
+              badge={ Object.values(badge) }
+            />
+          )) }
+        </ProyectsList>
+      </Container>
+    </Proyects>
   );
 };
+
+export async function getStaticProps() {
+  const res = await fetch('http://mooenz.me/api/data');
+  const data = res.json();
+  return {
+    props: {
+      data: data,
+    },
+  }
+}
 
 export default Projects;

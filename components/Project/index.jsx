@@ -1,46 +1,37 @@
-//component
+//Component
 import Badge from '../Badge';
 
 //Styles
-import style from './Project.module.scss';
+import { Card, ImageContainer, Img, CardContent, Type, Title, Body, Lang } from './styles';
 
 const Project = ({ title, type, body, url, bg, badge }) => {
-  const {
-    card,
-    card__img,
-    card__content,
-    card__lang,
-    img,
-    card__title,
-    card__body,
-  } = style;
 
   return (
-    <article className={card}>
-      <a href={url} target="_blank" rel="noreferrer noopener">
-        <div className={card__img}>
-          <img className={img} src={bg ? bg : '/icons/default.svg'} />
-        </div>
+    <Card>
+      <a href={ url } target="_blank" rel="noreferrer noopener">
+        <ImageContainer>
+          <Img src={ bg ? bg : '/icons/default.svg' } />
+        </ImageContainer>
       </a>
-      <div className={card__content}>
-        <p>{type}</p>
-        <h3 className={card__title}>{title}</h3>
-        <p className={card__body}>{body}</p>
-        <div className={card__lang}>
-          {badge.map(({ text, color, logo, width, fontColor }) => (
+      <CardContent>
+        <Type>{ type }</Type>
+        <Title>{ title }</Title>
+        <Body>{ body }</Body>
+        <Lang>
+          { badge.map(({ text, color, logo, width, fontColor }) => (
             <Badge
-              key={text}
-              name={text}
-              logo={logo}
-              color={color}
-              fontColor={fontColor}
-              alt={text}
-              width={width}
+              key={ text }
+              name={ text }
+              logo={ logo }
+              color={ color }
+              fontColor={ fontColor }
+              alt={ text }
+              width={ width }
             />
-          ))}
-        </div>
-      </div>
-    </article>
+          )) }
+        </Lang>
+      </CardContent>
+    </Card>
   );
 };
 

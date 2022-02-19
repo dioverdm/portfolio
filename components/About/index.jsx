@@ -4,10 +4,11 @@ import { useState } from 'react';
 //Components
 import StudyList from '../StudyList';
 import Skills from '../Skills';
-import SocialMedia from '../SocialMedia';
+import IconMedia from '../IconMedia';
 
 //styles
 import style from './About.module.scss';
+import { AboutStyle, Container, ImageContainer, BgImage, SocialMedia, ImageStyle, AboutStyleMe, Title, Taplist, Tap, Paragraph, Body, Strong, BtnDownload } from './styles';
 
 const About = () => {
   const {
@@ -35,69 +36,73 @@ const About = () => {
   };
 
   return (
-    <section className={about} id="about">
-      <div className={`${about__container} space-lateral`}>
-        <div className={about__image}>
-          <div className={avatar}>
-            <Image
+    <AboutStyle className='space-lateral' id="about">
+      <Container>
+        <ImageContainer>
+          <BgImage>
+            <ImageStyle
               src="/image/jose-manuel.png"
               height="200px"
               width="200px"
               alt="foto de Jose Manuel Montaño Sáenz"
-              className={img}
             />
-          </div>
-          <SocialMedia />
-        </div>
+          </BgImage>
 
-        <div className={about__me}>
-          <h2 className={title}>Sobre mí</h2>
-          <ul className={tablist}>
-            <li
-              className={tapState === 1 ? `${tapActive} ${tap}` : tap}
-              onClick={() => tapToggle(1)}
+          <SocialMedia>
+            <IconMedia url="https://www.linkedin.com/in/mooenz" title="Linkedin" bg="/icons/linkedin.svg"/>
+            <IconMedia url="https://twitter.com/MooenzDev" title="Twitter" bg="/icons/twitter.svg" />
+            <IconMedia url="https://github.com/Mooenz" title="Github" bg="/icons/github.svg" />
+          </SocialMedia>
+        </ImageContainer>
+
+        <AboutStyleMe>
+          <Title>Sobre mí</Title>
+          <Taplist>
+            <Tap
+              className={ tapState === 1 ? `${tapActive} ${tap}` : tap }
+              onClick={ () => tapToggle(1) }
             >
               Perfil
-            </li>
-            <li
-              className={tapState === 2 ? `${tapActive} ${tap}` : tap}
-              onClick={() => tapToggle(2)}
+            </Tap>
+            <Tap
+              className={ tapState === 2 ? `${tapActive} ${tap}` : tap }
+              onClick={ () => tapToggle(2) }
             >
               Estudios
-            </li>
-            <li
-              className={tapState === 3 ? `${tapActive} ${tap}` : tap}
-              onClick={() => tapToggle(3)}
+            </Tap>
+            <Tap
+              className={ tapState === 3 ? `${tapActive} ${tap}` : tap }
+              onClick={ () => tapToggle(3) }
             >
               Skills
-            </li>
-          </ul>
-          <div className={tapState === 1 ? `${body} ${bodyActive}` : body}>
-            <p className={paragraph}>
-              <span className={strong}>Soy maquetador web</span> en constante
+            </Tap>
+          </Taplist>
+          <Body className={ tapState === 1 ? `${body} ${bodyActive}` : body }>
+            <Paragraph>
+              <Strong>Soy maquetador web</Strong> en constante
               aprendizaje para lograr un puesto como Frontend. Me interesan
               tecnologías como React o Next js.
-            </p>
+            </Paragraph>
 
             <p>
               Busco un lugar ameno donde me permitan seguir creciendo como
               Developer Frontend.
             </p>
-            <button className={btnDownload}>
+            <BtnDownload>
               <a href="/Cv-José-M-Montaño.pdf" download>
                 Descargar CV
               </a>
-            </button>
-          </div>
-          <div className={tapState === 2 ? `${body} ${bodyActive}` : body}>
+            </BtnDownload>
+          </Body>
+          <div className={ tapState === 2 ? `${body} ${bodyActive}` : body }>
             <StudyList />
           </div>
-          <div className={tapState === 3 ? `${body} ${bodyActive}` : body}>
+          <div className={ tapState === 3 ? `${body} ${bodyActive}` : body }>
             <Skills />
           </div>
-        </div>
-      </div>
-    </section>
+        </AboutStyleMe>
+      </Container>
+    </AboutStyle>
   );
 };
 

@@ -2,20 +2,18 @@
 import data from '../../constant/skills.json';
 
 //Styles
-import styles from './Skills.module.scss';
+import { SkillsStyles, Body, Img, Name } from './styles';
 
 const Skills = () => {
-  const { skills, skills__body, skills__name, skills__img } = styles;
-
   return (
-    <ol className={skills}>
-      {data.map(({ name, icon, id }) => (
-        <li className={skills__body} key={id}>          
-          <img className={skills__img} src={icon} />
-          <p className={skills__name}>{name}</p>
-        </li>
-      ))}
-    </ol>
+    <SkillsStyles>
+      { data.map(({ name, icon, id }) => (
+        <Body key={ id }>
+          <Img src={ icon } />
+          <Name>{ name }</Name>
+        </Body>
+      )) }
+    </SkillsStyles>
   );
 };
 
