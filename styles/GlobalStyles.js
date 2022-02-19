@@ -48,6 +48,10 @@ const GlobalStyles = createGlobalStyle`
 
   .space-lateral {
     padding: 0 24px;
+
+    @media screen and (min-width:1200px) {
+      padding: 0;
+    }
   }
 `;
 

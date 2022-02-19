@@ -6,22 +6,15 @@ class MyDocument extends Document {
     return (
       <Html lang="es">
         <Head>
-          <link
-            crossOrigin="true"
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-          />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Raleway:wght@400;600&display=swap"
-            rel="stylesheet"
-          />
-          <link rel="icon" type="image/png" href="icon-64.png" sizes="64x64" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet" />
           <script
             async
-            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+            src={ `https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}` }
           />
           <script
-            dangerouslySetInnerHTML={{
+            dangerouslySetInnerHTML={ {
               __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -30,7 +23,7 @@ class MyDocument extends Document {
               page_path: window.location.pathname,
             });
           `,
-            }}
+            } }
           />
         </Head>
         <body>
@@ -49,7 +42,7 @@ MyDocument.getInitialProps = async (ctx) => {
   try {
     ctx.renderPage = () =>
       originalRenderPage({
-        enhanceApp: (App) => (props) => sheet.collectStyles(<App {...props} />),
+        enhanceApp: (App) => (props) => sheet.collectStyles(<App { ...props } />),
       });
 
     const initialProps = await Document.getInitialProps(ctx);
@@ -57,8 +50,8 @@ MyDocument.getInitialProps = async (ctx) => {
       ...initialProps,
       styles: (
         <>
-          {initialProps.styles}
-          {sheet.getStyleElement()}
+          { initialProps.styles }
+          { sheet.getStyleElement() }
         </>
       ),
     };
