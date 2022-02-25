@@ -84,6 +84,11 @@ export const Container = styled.div`
   background: ${redCherry};
   position: absolute;
   bottom: 50px;
+  transition-duration: .5s;
+
+  &:hover {
+    transform: scale(1.3);
+  }
 `;
 
 export const Arrow  = styled.a`
