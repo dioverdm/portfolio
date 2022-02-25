@@ -1,9 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 import Theme from '../../constant/uiTheme';
 import Image from 'next/image';
 
-
-const { black, blackIntense, redCherry } = Theme;
+const { white, black, blackIntense, redCherry } = Theme;
 
 export const AboutStyle = styled.section`
   background-color: ${black};
@@ -13,7 +12,7 @@ export const AboutStyle = styled.section`
   align-items: center;
   justify-content: center;
   position: relative;
-  `;
+`;
 
 export const Container = styled.section`
   padding: 100px 0;
@@ -22,7 +21,7 @@ export const Container = styled.section`
   gap: 32px;
   width: 100%;
 
-  @media screen and (min-width:790px) {
+  @media screen and (min-width: 790px) {
     width: 1200px;
     margin: 100px auto;
     grid-template-columns: repeat(2, 1fr);
@@ -37,8 +36,10 @@ export const ImageContainer = styled.section`
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  width: 100%;
+  height: 100%;
 `;
 
 export const BgImage = styled.div`
@@ -79,7 +80,7 @@ export const Taplist = styled.ul`
   gap: 16px;
   margin: 0 0 32px;
 
-  @media screen and (min-width:790px) {
+  @media screen and (min-width: 790px) {
     display: flex;
   }
 `;
@@ -89,7 +90,9 @@ export const Tap = styled.li`
   cursor: pointer;
   border: 2px solid transparent;
   text-align: center;
-  
+  color: ${({ tapState, tapTitle }) =>
+    tapState === tapTitle ? redCherry : white};
+
   &:hover {
     color: ${redCherry};
   }
@@ -100,12 +103,11 @@ export const Body = styled.div`
   line-height: 2.5rem;
   letter-spacing: 0.1rem;
   color: var(--gray);
-  display: none;
   width: 100%;
-`
+`;
 
 export const Paragraph = styled.p`
-  margin: 0 0 24px;
+  margin: ${({margin}) => margin ? "0 0 50px" :  "0 0 24px"};
 `;
 
 export const Strong = styled.span`
@@ -113,8 +115,8 @@ export const Strong = styled.span`
   color: var(--withe);
 `;
 
-export const BtnDownload = styled.button`
-  background-color: ${redCherry} ;
+export const BtnDownload = styled.a`
+  background-color: ${redCherry};
   color: var(--withe);
   font-size: 2rem;
   font-weight: 700;
