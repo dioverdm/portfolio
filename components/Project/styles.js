@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Theme from '../../constant/uiTheme';
 
-const { black, redCherry } = Theme;
+const { black, redCherry, white, gray } = Theme;
 
 export const Card = styled.article`
   background-color: ${black};
@@ -21,7 +21,7 @@ export const ImageContainer = styled.section`
 export const Img = styled.img`
   width: 100%;
   height: 200px;
-  background: var(--withe);
+  background-color: ${white};
   border-radius: 8px 8px 0 0;
   object-fit: cover;
   transition-duration: 1s;
@@ -48,7 +48,7 @@ export const Title = styled.h3`
 `;
 
 export const Body = styled.p`
-  color: var(--gray);
+  color: ${gray};
   font-size: 1.5rem;
   line-height: 2.5rem;
   margin: 16px 0 20px;

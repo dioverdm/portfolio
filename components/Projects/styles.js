@@ -9,7 +9,7 @@ export const Proyects = styled.section`
 `;
 
 export const Container = styled.section`
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1220px) {
   width: 1200px;
   margin: auto;
 }
@@ -33,7 +33,7 @@ export const ProyectsList = styled.section`
     grid-template-columns: repeat(2, auto);
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width:1220px) {
     grid-template-columns: repeat(3, auto);
   }
 `;

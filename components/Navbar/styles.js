@@ -20,7 +20,7 @@ export const Container = styled.nav`
   font-size: 1.5rem;
   margin: auto;
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width:1220px) {
     width: 1200px;
   }
 `;

@@ -62,7 +62,7 @@ export const Title = styled.h1`
     }
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width:1220px) {
     font-size: 10rem;
     line-height: 7.6rem;
 

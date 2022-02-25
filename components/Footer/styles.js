@@ -19,7 +19,7 @@ export const Content = styled.section`
     gap: 20px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1220px) {
     width: 1200px;
     margin: auto;
     padding: 0;
