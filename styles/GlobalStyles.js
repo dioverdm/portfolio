@@ -49,7 +49,7 @@ const GlobalStyles = createGlobalStyle`
   .space-lateral {
     padding: 0 24px;
 
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:1220px) {
       padding: 0;
     }
   }
