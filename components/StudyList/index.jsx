@@ -2,52 +2,51 @@
 import data from '../../constant/study.json';
 
 //Styles
-import styles from './StudyList.module.scss';
+import { Section, Title, Body, Strong } from './styles';
 
 const StudyList = () => {
-  const { section, title, body, strong, disapprove } = styles;
 
   return (
     <>
-      <section className={section}>
-        <h3 className={title}>En Proceso</h3>
+      <Section>
+        <Title>En Proceso</Title>
         <ol>
           {data.map(
             ({ name, from, id, state }) =>
               !state && (
                 <li key={id}>
-                  <p className={body}>
-                    {name} - <span className={strong}>{from}</span>
-                  </p>
+                  <Body>
+                    {name} - <Strong>{from}</Strong>
+                  </Body>
                 </li>
               )
           )}
         </ol>
-      </section>
-      <section className={`${disapprove} ${section}`}>
-        <h3 className={title}>Aprobados</h3>
+      </Section>
+      <Section >
+        <Title>Aprobados</Title>
         <ol>
           {data.map(
             ({ name, from, id, url, state }) =>
               state &&
               (!url ? (
                 <li key={id}>
-                  <p className={body}>
-                    {name} - <span className={strong}>{from}</span>
-                  </p>
+                  <Body>
+                    {name} - <Strong>{from}</Strong>
+                  </Body>
                 </li>
               ) : (
                 <li key={id}>
                   <a href={url} target="blank_" rel="noreferrer">
-                    <p className={body}>
-                      {name} - <span className={strong}>{from}</span>
-                    </p>
+                    <Body>
+                      {name} - <Strong>{from}</Strong>
+                    </Body>
                   </a>
                 </li>
               ))
           )}
         </ol>
-      </section>
+      </Section>
     </>
   );
 };

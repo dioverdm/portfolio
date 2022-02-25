@@ -1,16 +1,15 @@
 //Styles
-import style from './SocialMedia.module.scss';
-import { Icon, Linkedin, Twitter, Github } from './style';
+import { Icon } from './style';
 
-const IconMedia = ({ url, title }) => {
+const IconMedia = ({ url, title, bg }) => {
   return (
-    <Icon
-      href={ url }
+    <a href={ url }
       title={ title }
       target="_blank"
-      rel="noreferrer noopener"
-    >
-    </Icon>
+      rel="noreferrer noopener">
+      <Icon bg={bg}/>
+    </a>
+
   );
 };
 

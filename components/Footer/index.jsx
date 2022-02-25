@@ -1,27 +1,26 @@
-import style from './Footer.module.scss';
+//hooks
 import { useClickBoard } from '../../hooks/useClickBoard';
 
+//styles
+//styles
+import { FooterStyled, Content, Strong } from './styles';
+
 const Footer = () => {
-  const { footer, footer__content, strong } = style;
   const YEAR_NOW = new Date().getFullYear();
 
   return (
-    <footer className={footer}>
-      <div className={`${footer__content} space-lateral`}>
+    <FooterStyled>
+      <Content className="space-lateral">
         <p>
           Trabajemos juntos{' '}
-          <span
-            className={strong}
-            title="joss92821@hotmail.com"
-            onClick={() => useClickBoard()}
-          >
+          <Strong title="joss92821@hotmail.com" onClick={() => useClickBoard()}>
             Contácteme aquí
-          </span>
+          </Strong>
         </p>
         <p>Copyright © 1992 - {YEAR_NOW}</p>
         <p>Con 🖤 Mooenz</p>
-      </div>
-    </footer>
+      </Content>
+    </FooterStyled>
   );
 };
 
