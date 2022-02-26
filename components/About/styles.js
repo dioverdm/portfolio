@@ -90,8 +90,21 @@ export const Tap = styled.li`
   cursor: pointer;
   border: 2px solid transparent;
   text-align: center;
+  position: relative;
   color: ${({ tapState, tapTitle }) =>
     tapState === tapTitle ? redCherry : white};
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: ${({ tapState, tapTitle }) =>
+      tapState === tapTitle ? redCherry : 'transparent'};
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
 
   &:hover {
     color: ${redCherry};
@@ -107,7 +120,7 @@ export const Body = styled.div`
 `;
 
 export const Paragraph = styled.p`
-  margin: ${({margin}) => margin ? "0 0 50px" :  "0 0 24px"};
+  margin: ${({ margin }) => (margin ? '0 0 50px' : '0 0 24px')};
 `;
 
 export const Strong = styled.span`
