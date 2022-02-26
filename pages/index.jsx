@@ -9,7 +9,7 @@ import Footer from '../components/Footer';
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Mi portafolio - Mooenz</title>
         <link rel="icon" href="/favicon.ico" />
@@ -23,6 +23,6 @@ export default function Home() {
       <Projects />
       <Toaster position="bottom-center" reverseOrder={false} />
       <Footer />
-    </div>
+    </>
   );
 }
