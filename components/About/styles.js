@@ -2,10 +2,10 @@ import styled from 'styled-components';
 import Theme from '../../constant/uiTheme';
 import Image from 'next/image';
 
-const { white, black, blackIntense, redCherry } = Theme;
+const { white, black, blackIntense, redCherry, gray } = Theme;
 
 export const AboutStyle = styled.section`
-  background-color: ${black};
+  background-color: ${blackIntense};
   width: 100%;
   min-height: 70vh;
   display: flex;
@@ -43,7 +43,7 @@ export const ImageContainer = styled.section`
 `;
 
 export const BgImage = styled.div`
-  background-color: ${blackIntense};
+  background-color: ${black};
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -115,7 +115,7 @@ export const Body = styled.div`
   font-size: 1.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.1rem;
-  color: var(--gray);
+  color: ${gray};
   width: 100%;
 `;
 
@@ -125,12 +125,12 @@ export const Paragraph = styled.p`
 
 export const Strong = styled.span`
   font-weight: 700;
-  color: var(--withe);
+  color: ${white};
 `;
 
 export const BtnDownload = styled.a`
   background-color: ${redCherry};
-  color: var(--withe);
+  color: ${white};
   font-size: 2rem;
   font-weight: 700;
   padding: 8px 16px;

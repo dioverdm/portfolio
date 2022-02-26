@@ -17,8 +17,10 @@ const Footer = () => {
             Contácteme aquí
           </Strong>
         </p>
-        <p>Copyright © 1992 - {YEAR_NOW}</p>
-        <p>Con 🖤 Mooenz</p>
+        <p>Copyright © {YEAR_NOW}</p>
+        <p>
+          Con 🖤 <b>Mooenz</b>
+        </p>
       </Content>
     </FooterStyled>
   );

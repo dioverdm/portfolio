@@ -4,7 +4,7 @@ import Theme from '../../constant/uiTheme';
 const { white, blackIntense, redCherry } = Theme;
 
 export const FooterStyled = styled.footer`
-  background-color: ${white};
+  background-color: ${redCherry};
   font-size: 1.3rem;
   font-weight: 400;
   text-align: center;
@@ -31,7 +31,7 @@ export const Strong = styled.span`
   cursor: pointer;
 
   &:hover {
-    color: ${redCherry};
+    color: ${white};
     text-decoration: underline;
     transition-duration: 1s;
   }

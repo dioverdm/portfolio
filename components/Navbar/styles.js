@@ -15,7 +15,6 @@ export const Nav = styled.section`
 `;
 
 export const Container = styled.nav`
-
   width: 100%;
   height: 100%;
   display: flex;
@@ -109,6 +108,7 @@ export const Links = styled.ul`
     background: none;
     backdrop-filter: none;
     box-shadow: none;
+    height: 100%;
   }
 `;
 
@@ -117,7 +117,7 @@ export const Button = styled.button`
   border: 2px solid ${redCherry};
   border-radius: 30px;
   background-color: transparent;
-  color: var(--withe);
+  color: ${white};
   font-family: 'Poppins', sans-serif;
   font-size: 3rem;
   font-weight: 700;
