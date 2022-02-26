@@ -1,17 +1,21 @@
 import styled from 'styled-components';
-import Theme from '../../constant/uiTheme'
+import Theme from '../../constant/uiTheme';
 
-export const Nav = styled.div`
+const { white, redCherry } = Theme;
+
+export const Nav = styled.section`
   background: rgba(255, 255, 255, 0.01);
-  backdrop-filter: blur(10px);
+  backdrop-filter: ${({ blurActive }) => (blurActive ? 'none' : 'blur(10px)')};
   box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px;
   padding: 10px 0;
   position: fixed;
   z-index: 1;
   width: 100%;
+  height: 70px;
 `;
 
 export const Container = styled.nav`
+
   width: 100%;
   height: 100%;
   display: flex;
@@ -20,7 +24,7 @@ export const Container = styled.nav`
   font-size: 1.5rem;
   margin: auto;
 
-  @media screen and (min-width:1220px) {
+  @media screen and (min-width: 1220px) {
     width: 1200px;
   }
 `;
@@ -31,85 +35,102 @@ export const Logo = styled.a`
   transition-duration: 1s;
 
   &:hover {
-    color: ${Theme.redCherry};
+    color: ${redCherry};
     transition-duration: 1s;
   }
 `;
 
-export const Menu = styled.div`
-  position: relative;
-  height: 60px;
-  width: 150px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  cursor: pointer;
+export const Bar = styled.div`
+  height: 4px;
+  width: 100%;
+  background-color: ${white};
+  transition: 0.5s;
+  ${({ transformOne }) =>
+    transformOne && 'transform: rotate(-45deg) translate(-8px, 6px)'};
+  ${({ opacityBar }) => opacityBar && 'opacity:0'};
 
-  @media screen and (min-width:790px) {
-    width: auto;
-  }
+  ${({ transformTwo }) =>
+    transformTwo && 'transform: rotate(45deg) translate(-8px, -8px)'};
 `;
 
-export const Burger = styled.span`
-  display: inline-block;
+export const Burger = styled.div`
   height: 25px;
-  width: 25px;
-  background: url('../public/icons/Hamburger-icon.svg') center/contain no-repeat;
-  transition-duration: 1s;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1;
 
-  &:hover {
-    background: url('../public/icons/Hamburger-red-icon.svg') center/contain
-      no-repeat;
-    transition-duration: 1s;
+  &:hover ${Bar} {
+    background-color: ${redCherry};
   }
 
-  @media screen and (min-width:790px) {
+  @media screen and (min-width: 790px) {
     display: none;
   }
 `;
 
 export const Links = styled.ul`
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(10px);
+  box-shadow: rgb(0 0 0 / 10%) 0px 0px 30px;
   list-style: none;
-  display: none;
-  padding: 30px 24px;
+  display: ${({ showIcon }) => (showIcon ? 'flex' : 'none')};
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  text-align: center;
+  padding: 24px;
   position: absolute;
-  top: 45px;
-  right: -20px;
-  text-align: end;
-  gap: 8px;
   font-weight: 700;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-size: 4rem;
 
   li a {
     transition-duration: 1s;
     &:hover {
-      color: ${Theme.redCherry};
+      color: ${redCherry};
       text-decoration: underline;
     }
   }
 
-  @media screen and (min-width:790px) {
+  @media screen and (min-width: 790px) {
     display: flex;
     flex-direction: row;
     position: initial;
     align-items: center;
     gap: 24px;
     padding: 0;
+    font-size: 1.5rem;
+    background: none;
+    backdrop-filter: none;
+    box-shadow: none;
   }
 `;
 
 export const Button = styled.button`
-  padding: 5px 15px;
-  border: 2px solid ${Theme.redCherry};
+  padding: 8px 24px;
+  border: 2px solid ${redCherry};
   border-radius: 30px;
   background-color: transparent;
   color: var(--withe);
   font-family: 'Poppins', sans-serif;
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: 700;
   transition-duration: 0.5s;
+  cursor: pointer;
+
+  @media screen and (min-width: 790px) {
+    font-size: 1.5rem;
+    padding: 8px 16px;
+  }
 
   &:hover {
-    background-color: ${Theme.redCherry};
+    background-color: ${redCherry};
     text-decoration: none;
   }
 `;

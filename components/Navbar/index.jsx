@@ -1,43 +1,62 @@
+import { useState } from 'react';
 import Link from 'next/link';
 
 //hooks
 import { useClickBoard } from '../../hooks/useClickBoard';
+import useScrollBlock from '../../hooks/useScrollBlock';
 
 //styles
-import { Nav, Container, Logo, Menu, Burger, Links, Button } from './styles';
-
+import { Nav, Container, Logo, Burger, Bar, Links, Button } from './styles';
 
 const Navbar = () => {
+  const [icons, setIcons] = useState({
+    barOne: false,
+    barTwo: false,
+    barThree: false,
+  });
+
+  const [blockScroll, allowScroll] = useScrollBlock();
+
+  const [menuState, setMenuState] = useState(false);
+
+  const changeIcon = () => {
+    setMenuState(!menuState);
+    menuState ? allowScroll() : blockScroll();
+  };
 
   return (
-    <Nav>
-      <Container className='space-lateral'>
-        <Logo href="#home">
-          Mooenz
-        </Logo>
-        <Menu>
-          <Burger></Burger>
-          <Links>
-            <li>
-              <Link href="#about">
-                <a title="Inicio">Sobre mí</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="#work">
-                <a title="Portafolio">Portafolio</a>
-              </Link>
-            </li>
-            <li>
-              <Button
-                title="joss92821@hotmail.com"
-                onClick={ () => useClickBoard() }
-              >
-                Contactarme
-              </Button>
-            </li>
-          </Links>
-        </Menu>
+    <Nav blurActive={menuState}>
+      <Container className="space-lateral">
+        <Logo href="#home">Mooenz</Logo>
+        <Burger onClick={changeIcon}>
+          <Bar transformOne={menuState} />
+          <Bar opacityBar={menuState} />
+          <Bar transformTwo={menuState} />
+        </Burger>
+        <Links showIcon={menuState}>
+          <li>
+            <Link href="#about">
+              <a title="Inicio" onClick={changeIcon}>
+                Sobre mí
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="#work">
+              <a title="Portafolio" onClick={changeIcon}>
+                Portafolio
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Button
+              title="joss92821@hotmail.com"
+              onClick={() => useClickBoard()}
+            >
+              Contactarme
+            </Button>
+          </li>
+        </Links>
       </Container>
     </Nav>
   );
