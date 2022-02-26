@@ -7,15 +7,16 @@ const { white, black, blackIntense, redCherry, gray } = Theme;
 export const AboutStyle = styled.section`
   background-color: ${blackIntense};
   width: 100%;
-  min-height: 70vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  border-top: 2px solid rgb(245, 59, 87);
+  border-bottom: 2px solid rgb(245, 59, 87);
 `;
 
 export const Container = styled.section`
-  padding: 100px 0;
   display: grid;
   place-items: center;
   gap: 32px;
