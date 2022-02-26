@@ -20,8 +20,10 @@ const Navbar = () => {
   const [menuState, setMenuState] = useState(false);
 
   const changeIcon = () => {
-    setMenuState(!menuState);
-    menuState ? allowScroll() : blockScroll();
+    if(window.innerWidth < 790) {
+      setMenuState(!menuState);
+      menuState ? allowScroll() : blockScroll();
+    }
   };
 
   return (
