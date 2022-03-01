@@ -21,6 +21,7 @@ export const Container = styled.section`
   place-items: center;
   gap: 32px;
   width: 100%;
+  padding: 70px 0;
 
   @media screen and (min-width: 790px) {
     width: 1200px;
@@ -29,6 +30,7 @@ export const Container = styled.section`
     grid-template-rows: auto;
     place-content: center;
     gap: 0;
+    padding: 0;
   }
 `;
 
