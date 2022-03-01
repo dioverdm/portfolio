@@ -12,8 +12,10 @@ export const AboutStyle = styled.section`
   align-items: center;
   justify-content: center;
   position: relative;
-  border-top: 2px solid rgb(245, 59, 87);
-  border-bottom: 2px solid rgb(245, 59, 87);
+
+  @media screen and (min-width: 790px) {
+    min-height: 0;
+  }
 `;
 
 export const Container = styled.section`
