@@ -1,22 +1,19 @@
-import { useFetch } from '../../hooks/useFetch';
-
 //Components
 import Project from '../Project';
 
+//Data
+import data from '../../constant/projects.json'
+
 //Styles
-import { Proyects, Container, Title, ProyectsList } from './styles';
+import { ProjectsStyle, Container, Title, ProjectsList } from './styles';
 
-const Projects = ({data}) => {
-  const datos = Object.values(useFetch('http://localhost:3000/api/data'));
-
-  // console.log(data);
-
+const Projects = () => {
   return (
-    <Proyects id="work">
+    <ProjectsStyle id="work">
       <Container className="space-lateral">
         <Title>Portafolio</Title>
-        <ProyectsList>
-          {datos.map(({ title, type, body, url, bg, badge, key }) => (
+        <ProjectsList>
+          {data.map(({ title, type, body, url, bg, badge, key }) => (
             <Project
               key={key}
               title={title}
@@ -27,23 +24,10 @@ const Projects = ({data}) => {
               badge={Object.values(badge)}
             />
           ))}
-        </ProyectsList>
+        </ProjectsList>
       </Container>
-    </Proyects>
+    </ProjectsStyle>
   );
 };
-
-// export async function getStaticProps() {
-//   const res = await fetch('https://jsonplaceholder.typicode.com/todos/1');
-//   const data = await res.json();
-
-//   console.log(data)
-
-//   return {
-//     props: {
-//       data
-//     },
-//   };
-// }
 
 export default Projects;

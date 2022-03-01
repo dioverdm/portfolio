@@ -3,7 +3,7 @@ import Theme from '../../constant/uiTheme';
 
 const { blackIntense } = Theme;
 
-export const Proyects = styled.section`
+export const ProjectsStyle = styled.section`
   background-color: ${blackIntense};
   padding: 100px 0;
 `;
@@ -23,7 +23,7 @@ export const Title = styled.h2`
   width: 100%;
 `;
 
-export const ProyectsList = styled.section`
+export const ProjectsList = styled.section`
   display: grid;
   grid-template-columns: auto;
   place-content: center;
