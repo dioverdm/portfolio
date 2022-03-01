@@ -24,7 +24,6 @@ import {
 } from './styles';
 
 const About = () => {
-
   const [tapState, setTapState] = useState('Perfil');
 
   const tapToggle = (nameActive) => {
@@ -92,9 +91,9 @@ const About = () => {
             {tapState === 'Perfil' && (
               <>
                 <Paragraph>
-                  <Strong>Soy maquetador web</Strong> en constante aprendizaje
-                  para lograr un puesto como Frontend. Me interesan tecnologías
-                  como React o Next js.
+                  <Strong>Maquetador Web</Strong> en constante aprendizaje para
+                  lograr un puesto como Desarrollador Frontend. Me interesan
+                  tecnologías como React o Next js.
                 </Paragraph>
                 <Paragraph margin="50px">
                   Busco un lugar ameno donde me permitan seguir creciendo como
