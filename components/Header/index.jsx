@@ -5,7 +5,7 @@ import { Header, Title, Container, Arrow } from './styles'
 
 const header = () => {
   return (
-    <Header className="space-lateral" id="home">
+    <Header className="space-lateral">
       <div>
         <Title>José M Montaño</Title>
       </div>

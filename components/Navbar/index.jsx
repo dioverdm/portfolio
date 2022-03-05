@@ -9,12 +9,6 @@ import useScrollBlock from '../../hooks/useScrollBlock';
 import { Nav, Container, Logo, Burger, Bar, Links, Button } from './styles';
 
 const Navbar = () => {
-  const [icons, setIcons] = useState({
-    barOne: false,
-    barTwo: false,
-    barThree: false,
-  });
-
   const [blockScroll, allowScroll] = useScrollBlock();
 
   const [menuState, setMenuState] = useState(false);
@@ -29,7 +23,7 @@ const Navbar = () => {
   return (
     <Nav blurActive={menuState}>
       <Container className="space-lateral">
-        <Logo href="#home">Mooenz</Logo>
+        <Logo href="#">Mooenz</Logo>
         <Burger onClick={changeIcon}>
           <Bar transformOne={menuState} />
           <Bar opacityBar={menuState} />
