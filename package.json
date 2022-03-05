@@ -1,6 +1,8 @@
 {
   "name": "portfolio",
+  "version": "1.0.0",
   "homepage": "https://mooenz.github.io/portfolio",
+  "author": "Jose Manuel Montaño Saenz",
   "private": true,
   "scripts": {
     "dev": "next dev",
