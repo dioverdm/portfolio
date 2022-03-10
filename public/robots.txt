@@ -1,0 +1,6 @@
+Sitemap: https://mooenz.me
+
+User-agent: *
+Allow: /*
+
+Disallow: /api/*
