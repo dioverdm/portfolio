@@ -4,7 +4,7 @@
     "type": "cliente",
     "body": "Esta pagina web fue desarrollada con el fin de dar a conocer la empresa, canalizar clientes por medio de un formulario y números telefónicos.",
     "url": "https://www.audiservicios.com.co/",
-    "bg": "/image/@udiservicios.png",
+    "bg": "/image/@udiservicios.webp",
     "badge": {
       "html": {
         "text": "HTML5",
@@ -76,7 +76,7 @@
     "type": "prueba técnica",
     "body": "Este proyecto es el resultado de una prueba técnica. El objetivo de esta prueba era mostrar el nivel de ",
     "url": "https://mooenz.github.io/prueba-tecnica-landin-page/",
-    "bg": "/image/prueba-tecnica-landing-page.jpg",
+    "bg": "/image/prueba-tecnica-landing-page.webp",
     "badge": {
       "scss": {
         "text": "SASS",
@@ -99,7 +99,7 @@
     "type": "prueba técnica",
     "body": "Esta prueba se realizo con el objetivo de demostrar la capacidad de replicar un sitio partiendo de un diseño previo.",
     "url": "https://mooenz.github.io/prueba-frontend-ux/",
-    "bg": "/image/prueba-tecnica-frontend-ux.jpg",
+    "bg": "/image/prueba-tecnica-frontend-ux.webp",
     "badge": {
       "react": {
         "text": "CREATE REACT APP",
