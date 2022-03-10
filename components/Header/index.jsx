@@ -1,7 +1,5 @@
-import Link from 'next/dist/client/link';
-
 //Styles
-import { Header, Title, Container, Arrow } from './styles'
+import { Header, Title, Container, Arrow } from './styles';
 
 const header = () => {
   return (
@@ -9,11 +7,9 @@ const header = () => {
       <div>
         <Title>José M Montaño</Title>
       </div>
-      <Link rel="stylesheet" href="#about">
-        <Container>
-          <Arrow></Arrow>
-        </Container>
-      </Link>
+      <Arrow href="#about" title="¿Quieres contratarme?, te invito a conocerme">
+        <Container />
+      </Arrow>
     </Header>
   );
 };

@@ -3,13 +3,13 @@ import { Icon } from './style';
 
 const IconMedia = ({ url, title, bg }) => {
   return (
-    <a href={ url }
+    <Icon href={ url }
       title={ title }
       target="_blank"
-      rel="noreferrer noopener">
-      <Icon bg={bg}/>
-    </a>
-
+      rel="noreferrer noopener" 
+      bg={bg}
+      >      
+    </Icon>
   );
 };
 

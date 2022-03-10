@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import Theme from "../../constant/uiTheme";
+import styled from 'styled-components';
+import Theme from '../../constant/uiTheme';
 
 const { blackIntense, white, gray, redCherry } = Theme;
 
@@ -29,7 +29,7 @@ export const Title = styled.h1`
     content: '¡Hola! me llamo';
     font-size: 1.8rem;
     font-weight: 400;
-    line-height: 2.5rem;  
+    line-height: 2.5rem;
     color: ${gray};
     margin: 0 0 5px;
   }
@@ -43,7 +43,7 @@ export const Title = styled.h1`
     margin: 5px 0 0;
   }
 
-  @media screen and (min-width:790px) {
+  @media screen and (min-width: 790px) {
     font-size: 7rem;
     line-height: 6.6rem;
 
@@ -54,15 +54,15 @@ export const Title = styled.h1`
     }
 
     &::before {
-      text-align: start
+      text-align: start;
     }
 
     &::after {
-      text-align: end    
+      text-align: end;
     }
   }
 
-  @media screen and (min-width:1220px) {
+  @media screen and (min-width: 1220px) {
     font-size: 10rem;
     line-height: 7.6rem;
 
@@ -74,7 +74,7 @@ export const Title = styled.h1`
   }
 `;
 
-export const Container = styled.div`
+export const Arrow = styled.a`
   cursor: pointer;
   border-radius: 50%;
   display: flex;
@@ -84,16 +84,16 @@ export const Container = styled.div`
   background: ${redCherry};
   position: absolute;
   bottom: 50px;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 
   &:hover {
     transform: scale(1.3);
   }
 `;
 
-export const Arrow  = styled.a`
+export const Container = styled.div`
   display: inline-block;
   height: 28px;
   width: 28px;
-  background: url('/icons/down-arrow.svg') center/contain no-repeat;
+  background: url('/icons/down-arrow.webp') center/contain no-repeat;
 `;

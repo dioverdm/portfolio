@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 import Theme from '../../constant/uiTheme';
 
 const { black, redCherry, white, gray } = Theme;
@@ -29,7 +29,7 @@ export const Img = styled.img`
   &:hover {
     transform: scale(1.1);
   }
-`
+`;
 
 export const CardContent = styled.section`
   padding: 40px 24px;
@@ -61,4 +61,4 @@ export const Lang = styled.section`
   flex-wrap: wrap;
   gap: 16px;
   font-size: 1.5rem;
-`; 
+`;

@@ -66,6 +66,8 @@ export const SocialMedia = styled.section`
 export const ImageStyle = styled(Image)`
   border-radius: 50%;
   object-fit: cover;
+  width: 200px;
+  height: 200px;
 `;
 
 export const AboutStyleMe = styled.section`

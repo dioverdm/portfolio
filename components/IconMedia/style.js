@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
-export const Icon = styled.span`
+export const Icon = styled.a`
   display: inline-block;
   height: 24px;
   width: 24px;
   transition-duration: 0.5s;
-  background: ${(props) => props.bg && `url(${props.bg})`};
+  background: ${(props) => props.bg && `url('${props.bg}')`} center/contain
+    no-repeat;
 
   &:hover {
     transform: scale(0.9);

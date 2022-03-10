@@ -36,9 +36,9 @@ const About = () => {
         <ImageContainer>
           <BgImage>
             <ImageStyle
-              src="/image/jose-manuel.png"
-              height="200px"
-              width="200px"
+              src="/image/jose-manuel.webp"
+              height={200}
+              width={200}
               alt="foto de Jose Manuel Montaño Sáenz"
             />
           </BgImage>
@@ -47,17 +47,17 @@ const About = () => {
             <IconMedia
               url="https://www.linkedin.com/in/mooenz"
               title="Linkedin"
-              bg="/icons/linkedin.svg"
+              bg="/icons/linkedin.webp"
             />
             <IconMedia
               url="https://twitter.com/MooenzDev"
               title="Twitter"
-              bg="/icons/twitter.svg"
+              bg="/icons/twitter.webp"
             />
             <IconMedia
               url="https://github.com/Mooenz"
               title="Github"
-              bg="/icons/github.svg"
+              bg="/icons/github.webp"
             />
           </SocialMedia>
         </ImageContainer>
