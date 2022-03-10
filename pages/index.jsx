@@ -31,28 +31,52 @@ export default function Home() {
         <meta name="author" content="Jose Manuel Montaño Saenz, Mooenz" />
         <meta name="copyright" content="Mooenz" />
         <meta httpEquiv="expires" content="43200" />
-        <link rel="icon" href="/favicon/favicon.ico" />
+        {/* twitter card */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@MooenzDev" />
+        <meta
+          name="twitter:title"
+          content="Desarrollador Frontend y Maquetador web - Mooenz"
+        />
+        <meta
+          name="twitter:description"
+          content="Maquetador Web en constante aprendizaje para lograr un puesto como Desarrollador Frontend. Me interesan tecnologías como React o Next js. Busco un lugar ameno donde me permitan seguir creciendo como Developer Frontend."
+        />
+        {/* open graph card */}
+        <meta
+          property="og:title"
+          content="Desarrollador Frontend y Maquetador web - Mooenz"
+        />
+        <meta property="og:site_name" content="mooenz.me" />
+        <meta property="og:url" content="https://www.mooenz.me/" />
+        <meta
+          property="og:description"
+          content="Maquetador Web en constante aprendizaje para lograr un puesto como Desarrollador Frontend. Me interesan tecnologías como React o Next js. Busco un lugar ameno donde me permitan seguir creciendo como Developer Frontend."
+        />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="/image/jose-manuel.webp" />
+        <link rel="icon" href="/favicon/favicon.webp" />
         <link
           rel="apple-touch-icon"
           sizes="76x76"
-          href="/favicon/apple-touch-icon.png"
+          href="/favicon/apple-touch-icon.webp"
         />
         <link
           rel="icon"
-          type="image/png"
+          type="image/webp"
           sizes="32x32"
-          href="/favicon/favicon-32x32.png"
+          href="/favicon/favicon-32x32.webp"
         />
         <link
           rel="icon"
-          type="image/png"
+          type="image/webp"
           sizes="16x16"
-          href="/favicon/favicon-16x16.png"
+          href="/favicon/favicon-16x16.webp"
         />
         <link rel="manifest" href="/favicon/site.webmanifest" />
         <link
           rel="mask-icon"
-          href="/favicon/safari-pinned-tab.svg"
+          href="/favicon/safari-pinned-tab.webp"
           color="#f53b57"
         />
         <link rel="canonical" href="https://www.mooenz.me/" />
