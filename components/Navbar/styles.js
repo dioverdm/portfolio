@@ -4,8 +4,8 @@ import Theme from '../../constant/uiTheme';
 const { white, redCherry } = Theme;
 
 export const Nav = styled.section`
-  background: rgba(255, 255, 255, 0.01);
-  backdrop-filter: ${({ blurActive }) => (blurActive ? 'none' : 'blur(10px)')};
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: ${({ blurActive }) => (blurActive ? 'none' : 'blur(20px)')};
   box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px;
   padding: 10px 0;
   position: fixed;
