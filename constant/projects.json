@@ -32,7 +32,7 @@
     "type": "Proyecto Personal",
     "body": "Este es un buscador que recopila todos los retros concluidos del sitio Frontend Mentor. además están clasificados por Newbie y Junior.",
     "url": "https://github.com/Mooenz/portfolio-frontendmentor",
-    "bg": "",
+    "bg": "/image/frontendmentor.webp",
     "badge": {
       "next": {
         "text": "NEXT.JS",
