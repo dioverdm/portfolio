@@ -40,11 +40,11 @@
         "logo": "next.js",
         "width": "75"
       },
-      "scss": {
-        "text": "SASS",
-        "color": "CC6699",
-        "logo": "sass",
-        "width": "59"
+      "styled-components": {
+        "text": "STYLED COMPONENTS",
+        "color": "DB7093",
+        "logo": "styled-components",
+        "width": "153"
       }
     },
     "key": 2
@@ -62,11 +62,11 @@
         "logo": "next.js",
         "width": "75"
       },
-      "scss": {
-        "text": "SASS",
-        "color": "CC6699",
-        "logo": "sass",
-        "width": "59"
+      "styled-components": {
+        "text": "STYLED COMPONENTS",
+        "color": "DB7093",
+        "logo": "styled-components",
+        "width": "153"
       }
     },
     "key": 3
