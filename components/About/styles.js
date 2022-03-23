@@ -12,6 +12,8 @@ export const AboutStyle = styled.section`
   align-items: center;
   justify-content: center;
   position: relative;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
 
   @media screen and (min-width: 790px) {
     min-height: 0;
