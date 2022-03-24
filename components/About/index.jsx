@@ -99,8 +99,10 @@ const About = () => {
                   Busco un lugar ameno donde me permitan seguir creciendo como
                   Developer Frontend.
                 </Paragraph>
-                <BtnDownload href="/Cv-José-M-Montaño.pdf" download>
+                <BtnDownload >
+                  <a href="/Cv-José-M-Montaño.pdf" download>
                   Descargar CV
+                  </a>
                 </BtnDownload>
               </>
             )}
