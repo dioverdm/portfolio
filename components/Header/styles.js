@@ -5,7 +5,9 @@ const { blackIntense, white, gray, redCherry } = Theme;
 
 export const Header = styled.header`
   position: relative;
+  width: 100%;
   height: 100vh;
+  min-height: 870px;
   display: flex;
   justify-content: center;
   align-items: center;

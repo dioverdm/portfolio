@@ -29,12 +29,14 @@ export const Container = styled.section`
 
   @media screen and (min-width: 790px) {
     width: 1200px;
-    margin: 100px auto;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     place-content: center;
-    gap: 0;
-    padding: 0;
+    height: 800px;
+  }
+
+  @media screen and (min-width: 1220px) {
+    padding: 0 32px;
   }
 `;
 
@@ -137,7 +139,7 @@ export const Strong = styled.span`
   color: ${white};
 `;
 
-export const BtnDownload = styled.a`
+export const BtnDownload = styled.div`
   background-color: ${redCherry};
   color: ${white};
   font-size: 2rem;
@@ -146,8 +148,23 @@ export const BtnDownload = styled.a`
   border-radius: 10px;
   border: none;
   margin: 32px 0 0;
+  cursor: pointer;
+  width: 187px;
+  height: 40px;
+  position: relative;
 
+  a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: 0;
+    height: 40px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
   &:hover {
-    opacity: 0.9;
+    opacity: .9;
   }
 `;
