@@ -53,8 +53,8 @@
     "title": "Portafolio DevChallenges",
     "type": "Proyecto Personal",
     "body": "Este es un buscador que recopila todos los retros concluidos del sitio DevChallenges. Solo son proyectos pertenecientes a la categoría Responsive.",
-    "url": "https://github.com/Mooenz/portfolio-devchallenges",
-    "bg": "",
+    "url": "https://devchallenges-seven.vercel.app/",
+    "bg": "/image/devChallenges.webp",
     "badge": {
       "next": {
         "text": "NEXT.JS",
