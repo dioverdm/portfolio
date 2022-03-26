@@ -6,9 +6,14 @@ const { black, blacLight, redCherry, white, gray } = Theme;
 export const Card = styled.article`
   background-color: ${black};
   border-radius: 10px;
-  box-shadow: 0px 10px 30px -7px rgba(21, 21, 21, 0.8);
+  box-shadow: 0px 10px 30px -7px rgba(34, 34, 34, 0.8);
   max-width: 380px;
   border: 1px solid ${blacLight};
+  transition-duration: 0.5s;
+
+  &:hover {
+    border: 1px solid ${redCherry};
+  }
 `;
 
 export const ImageContainer = styled.section`
