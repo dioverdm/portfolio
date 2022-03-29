@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Script from 'next/script';
 import { Toaster } from 'react-hot-toast';
 
 //Components
@@ -9,6 +10,7 @@ import Projects from '../components/Projects';
 import Footer from '../components/Footer';
 
 export default function Home() {
+  const GA_TRACKING_ID = 'G-MNYDCMVBPH';
   return (
     <>
       <Head>
@@ -92,11 +94,24 @@ export default function Home() {
       <Projects />
       <Toaster position="bottom-center" reverseOrder={false} />
       <Footer />
+      <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+      />
+      <Script
+        id="gtag-init"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+      />
     </>
   );
 }
-
-/**
- *
- * <meta name="google-site-verification" content="qAWFc7fQ6Gcr1d5vlc-TKfYgqz3_Yl7wGAT_NDUUdBA" />
- */
