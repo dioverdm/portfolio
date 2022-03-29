@@ -54,6 +54,10 @@ export default function Home() {
           content="Maquetador Web en constante aprendizaje para lograr un puesto como Desarrollador Frontend. Me interesan tecnologías como React o Next js. Busco un lugar ameno donde me permitan seguir creciendo como Developer Frontend."
         />
         <meta property="og:type" content="article" />
+        <meta
+          name="google-site-verification"
+          content="qAWFc7fQ6Gcr1d5vlc-TKfYgqz3_Yl7wGAT_NDUUdBA"
+        />
         <meta property="og:image" content="/image/jose-manuel.webp" />
         <link rel="icon" href="/favicon/favicon.webp" />
         <link
@@ -91,3 +95,8 @@ export default function Home() {
     </>
   );
 }
+
+/**
+ *
+ * <meta name="google-site-verification" content="qAWFc7fQ6Gcr1d5vlc-TKfYgqz3_Yl7wGAT_NDUUdBA" />
+ */
