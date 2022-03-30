@@ -54,7 +54,7 @@ const GlobalStyles = createGlobalStyle`
       padding: 0 24px;
     }
 
-    @media screen and (min-width:1220px) {
+    @media screen and (min-width:1250px) {
       padding: 0;
     }
   }
