@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Theme from '../../constant/uiTheme';
 import Image from 'next/image';
 
-const { white, black, blackIntense, redCherry, gray } = Theme;
+const { white, black, blackIntense, blackLight, redCherry, gray } = Theme;
 
 export const AboutStyle = styled.section`
   background-color: ${blackIntense};
@@ -12,31 +12,27 @@ export const AboutStyle = styled.section`
   align-items: center;
   justify-content: center;
   position: relative;
-  border-top: 1px solid #333;
-  border-bottom: 1px solid #333;
-
-  @media screen and (min-width: 790px) {
-    min-height: 0;
-  }
 `;
 
 export const Container = styled.section`
   display: grid;
-  place-items: center;
   gap: 32px;
   width: 100%;
-  padding: 70px 0;
+  padding: 70px 24px;
+  background-color: ${black};
+  border-radius: 10px;
+  border: 1px solid ${blackLight};
+  transition-duration: 0.5s;
+  margin: 70px 0;
 
   @media screen and (min-width: 790px) {
     width: 1200px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    place-content: center;
-    height: 800px;
   }
 
   @media screen and (min-width: 1220px) {
-    padding: 0 32px;
+    padding: 70px 32px;
   }
 `;
 
@@ -49,13 +45,19 @@ export const ImageContainer = styled.section`
   align-items: center;
   width: 100%;
   height: 100%;
+  place-content: center;
 `;
 
 export const BgImage = styled.div`
-  background-color: ${black};
-  width: 200px;
-  height: 200px;
+  background-color: ${blackLight};
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
+
+  @media screen and (min-width: 1220px) {
+    width: 300px;
+    height: 300px;
+  }
 `;
 
 export const SocialMedia = styled.section`
@@ -65,13 +67,23 @@ export const SocialMedia = styled.section`
   align-items: center;
   width: 100%;
   margin: 32px 0 0;
+
+  @media screen and (min-width: 1220px) {
+    gap: 35px;
+    margin: 40px 0 0;
+  }
 `;
 
 export const ImageStyle = styled(Image)`
   border-radius: 50%;
   object-fit: cover;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
+
+  @media screen and (min-width: 1220px) {
+    width: 300px;
+    height: 300px;
+  }
 `;
 
 export const AboutStyleMe = styled.section`
@@ -87,17 +99,19 @@ export const Taplist = styled.ul`
   font-size: 2rem;
   font-weight: 700;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
   gap: 16px;
   margin: 0 0 32px;
+  width: 100%;
 
   @media screen and (min-width: 790px) {
     display: flex;
+    font-size: 2rem;
   }
 `;
 
 export const Tap = styled.li`
-  padding: 8px 16px;
+  padding: 8px 0;
   cursor: pointer;
   border: 2px solid transparent;
   text-align: center;
@@ -119,6 +133,10 @@ export const Tap = styled.li`
 
   &:hover {
     color: ${redCherry};
+  }
+
+  @media screen and (min-width: 790px) {
+    padding: 8px 16px;
   }
 `;
 
@@ -161,10 +179,10 @@ export const BtnDownload = styled.div`
     border: 0;
     height: 40px;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
   }
   &:hover {
-    opacity: .9;
+    opacity: 0.9;
   }
 `;

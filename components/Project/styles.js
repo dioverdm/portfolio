@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 import Theme from '../../constant/uiTheme';
 
-const { black, blacLight, redCherry, white, gray } = Theme;
+const { black, blackLight, redCherry, white, gray } = Theme;
 
 export const Card = styled.article`
   background-color: ${black};
   border-radius: 10px;
   box-shadow: 0px 10px 30px -7px rgba(34, 34, 34, 0.8);
   max-width: 380px;
-  border: 1px solid ${blacLight};
+  border: 1px solid ${blackLight};
   transition-duration: 0.5s;
 
   &:hover {

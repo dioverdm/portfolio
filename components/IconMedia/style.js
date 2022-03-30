@@ -11,4 +11,9 @@ export const Icon = styled.a`
   &:hover {
     transform: scale(0.9);
   }
+
+  @media screen and (min-width: 1220px) {
+    height: 35px;
+    width: 35px;
+  }
 `;

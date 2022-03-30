@@ -48,7 +48,11 @@ const GlobalStyles = createGlobalStyle`
   /* scroll */
 
   .space-lateral {
-    padding: 0 24px;
+    padding: 0 12px;
+
+    @media screen and (min-width:790px) {
+      padding: 0 24px;
+    }
 
     @media screen and (min-width:1220px) {
       padding: 0;

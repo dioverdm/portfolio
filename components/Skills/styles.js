@@ -1,12 +1,16 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 import Theme from '../../constant/uiTheme';
 
 const { withe } = Theme;
 
 export const SkillsStyles = styled.ol`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 24px;
+
+  @media screen and (min-width: 790px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 export const Body = styled.li`
