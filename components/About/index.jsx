@@ -37,8 +37,8 @@ const About = () => {
           <BgImage>
             <ImageStyle
               src="/image/jose-manuel.webp"
-              height={200}
-              width={200}
+              height={300}
+              width={300}
               alt="foto de Jose Manuel Montaño Sáenz"
             />
           </BgImage>
