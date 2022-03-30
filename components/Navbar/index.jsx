@@ -1,20 +1,38 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import Link from 'next/link';
+
+//ObserverContext
+import { ObserverContext } from '../../context/ObserverContext';
 
 //hooks
 import { useClickBoard } from '../../hooks/useClickBoard';
 import useScrollBlock from '../../hooks/useScrollBlock';
 
 //styles
-import { Nav, Container, Logo, Burger, Bar, Links, Button } from './styles';
+import {
+  Nav,
+  Container,
+  Logo,
+  Burger,
+  Bar,
+  Links,
+  Button,
+  Tap,
+} from './styles';
 
 const Navbar = () => {
+  //context ObserverContext
+  const { activeTap } = useContext(ObserverContext);
+
+  //hook useScrollBlock
   const [blockScroll, allowScroll] = useScrollBlock();
 
+  //state
+  //menu hamburger
   const [menuState, setMenuState] = useState(false);
 
   const changeIcon = () => {
-    if(window.innerWidth < 790) {
+    if (window.innerWidth < 790) {
       setMenuState(!menuState);
       menuState ? allowScroll() : blockScroll();
     }
@@ -23,7 +41,9 @@ const Navbar = () => {
   return (
     <Nav blurActive={menuState}>
       <Container className="space-lateral">
-        <Logo href="#">Mooenz</Logo>
+        <Logo href="#" activeTap={activeTap} tapTitle="home">
+          Mooenz
+        </Logo>
         <Burger onClick={changeIcon}>
           <Bar transformOne={menuState} />
           <Bar opacityBar={menuState} />
@@ -32,16 +52,26 @@ const Navbar = () => {
         <Links showIcon={menuState}>
           <li>
             <Link href="#about">
-              <a title="Inicio" onClick={changeIcon}>
+              <Tap
+                title="Inicio"
+                onClick={changeIcon}
+                activeTap={activeTap}
+                tapTitle="about"
+              >
                 Sobre mí
-              </a>
+              </Tap>
             </Link>
           </li>
           <li>
-            <Link href="#work">
-              <a title="Portafolio" onClick={changeIcon}>
+            <Link href="#projects">
+              <Tap
+                title="Portafolio"
+                onClick={changeIcon}
+                activeTap={activeTap}
+                tapTitle="projects"
+              >
                 Portafolio
-              </a>
+              </Tap>
             </Link>
           </li>
           <li>

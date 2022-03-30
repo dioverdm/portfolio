@@ -31,11 +31,12 @@ export const Container = styled.nav`
 export const Logo = styled.a`
   font-size: 2.2rem;
   font-weight: 800;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
+  padding-bottom: 5px;
+  color: ${({ activeTap, tapTitle }) => activeTap === tapTitle && redCherry};
 
   &:hover {
     color: ${redCherry};
-    transition-duration: 1s;
   }
 `;
 
@@ -89,14 +90,6 @@ export const Links = styled.ul`
   top: 0;
   font-size: 4rem;
 
-  li a {
-    transition-duration: 1s;
-    &:hover {
-      color: ${redCherry};
-      text-decoration: underline;
-    }
-  }
-
   @media screen and (min-width: 790px) {
     display: flex;
     flex-direction: row;
@@ -109,6 +102,27 @@ export const Links = styled.ul`
     backdrop-filter: none;
     box-shadow: none;
     height: 100%;
+  }
+`;
+
+export const Tap = styled.a`
+  transition-duration: 0.5s;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 5px;
+  cursor: pointer;
+
+  color: ${({ activeTap, tapTitle }) => activeTap === tapTitle && redCherry};
+
+  border-bottom: ${({ activeTap, tapTitle }) =>
+    activeTap === tapTitle && ` 2px solid ${redCherry}`};
+
+  &:hover {
+    color: ${redCherry};
+    border-bottom: 2px solid ${redCherry};
+  }
+
+  &:nth-child(3) {
+    border: none;
   }
 `;
 

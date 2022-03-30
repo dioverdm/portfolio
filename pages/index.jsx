@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Script from 'next/script';
+import UseObserver from '../context/ObserverContext';
 import { Toaster } from 'react-hot-toast';
 
 //Components
@@ -88,12 +89,14 @@ export default function Home() {
         <link rel="canonical" href="https://www.mooenz.me/" />
         <title>Desarrollador Frontend y Maquetador web - Mooenz</title>
       </Head>
-      <Navbar />
-      <Header />
-      <About />
-      <Projects />
-      <Toaster position="bottom-center" reverseOrder={false} />
-      <Footer />
+      <UseObserver>
+        <Navbar />
+        <Header />
+        <About />
+        <Projects />
+        <Toaster position="bottom-center" reverseOrder={false} />
+        <Footer />
+      </UseObserver>
       <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}

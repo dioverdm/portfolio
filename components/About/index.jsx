@@ -1,9 +1,13 @@
-import { useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 //components
 import StudyList from '../StudyList';
 import Skills from '../Skills';
 import IconMedia from '../IconMedia';
+
+//ObserverContext
+import { ObserverContext } from '../../context/ObserverContext';
 
 //styles
 import {
@@ -24,6 +28,20 @@ import {
 } from './styles';
 
 const About = () => {
+  //observer
+  const { setActiveTap } = useContext(ObserverContext);
+
+  const { ref, inView } = useInView({
+    threshold: 0.6,
+  });
+
+  useEffect(() => {
+    return () => {
+      setActiveTap('about');
+    };
+  }, [inView]);
+
+  //State Tap
   const [tapState, setTapState] = useState('Perfil');
 
   const tapToggle = (nameActive) => {
@@ -31,7 +49,7 @@ const About = () => {
   };
 
   return (
-    <AboutStyle className="space-lateral" id="about">
+    <AboutStyle className="space-lateral" id="about" ref={ref}>
       <Container>
         <ImageContainer>
           <BgImage>
@@ -99,9 +117,9 @@ const About = () => {
                   Busco un lugar ameno donde me permitan seguir creciendo como
                   Developer Frontend.
                 </Paragraph>
-                <BtnDownload >
+                <BtnDownload>
                   <a href="/Cv-José-M-Montaño.pdf" download>
-                  Descargar CV
+                    Descargar CV
                   </a>
                 </BtnDownload>
               </>
