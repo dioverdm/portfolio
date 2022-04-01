@@ -10,6 +10,7 @@ export const Card = styled.article`
   max-width: 380px;
   border: 1px solid ${blackLight};
   transition-duration: 0.5s;
+  position: relative;
 
   &:hover {
     border: 1px solid ${redCherry};
@@ -57,7 +58,7 @@ export const Body = styled.p`
   color: ${gray};
   font-size: 1.5rem;
   line-height: 2.5rem;
-  margin: 16px 0 20px;
+  margin: 16px 0 40px;
   letter-spacing: 0.5px;
 `;
 
@@ -67,4 +68,7 @@ export const Lang = styled.section`
   flex-wrap: wrap;
   gap: 16px;
   font-size: 1.5rem;
+  position: absolute;
+  left: 24px;
+  bottom: 40px;
 `;
