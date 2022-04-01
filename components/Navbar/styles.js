@@ -105,14 +105,12 @@ export const Links = styled.ul`
   }
 `;
 
-export const Tap = styled.a`
+export const Tap = styled.span`
   transition-duration: 0.5s;
   border-bottom: 2px solid transparent;
   padding-bottom: 5px;
   cursor: pointer;
-
   color: ${({ activeTap, tapTitle }) => activeTap === tapTitle && redCherry};
-
   border-bottom: ${({ activeTap, tapTitle }) =>
     activeTap === tapTitle && ` 2px solid ${redCherry}`};
 
