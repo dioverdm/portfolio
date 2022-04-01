@@ -4,7 +4,12 @@
   { "name": "scss", "icon": "./icons/scss.webp", "id": 3 },
   { "name": "tailwind css", "icon": "./icons/tailwindcss.webp", "id": 4 },
   { "name": "bootstrap", "icon": "./icons/bootstrap.webp", "id": 5 },
-  { "name": "javascript", "icon": "./icons/javascript.webp", "id": 6 },
-  { "name": "react.js", "icon": "./icons/reactjs.webp", "id": 7 },
-  { "name": "next.js", "icon": "./icons/nextjs.webp", "id": 8 }
+  {
+    "name": "styled-components",
+    "icon": "./icons/styled-components.webp",
+    "id": 6
+  },
+  { "name": "javascript", "icon": "./icons/javascript.webp", "id": 7 },
+  { "name": "react.js", "icon": "./icons/reactjs.webp", "id": 8 },
+  { "name": "next.js", "icon": "./icons/nextjs.webp", "id": 9 }
 ]
