@@ -6,23 +6,17 @@
     "url": "https://www.audiservicios.com.co/",
     "bg": "/image/@udiservicios.webp",
     "badge": {
-      "html": {
-        "text": "HTML5",
-        "color": "E34F26",
-        "logo": "html5",
-        "width": "65"
+      "next": {
+        "text": "NEXT.JS",
+        "color": "000000",
+        "logo": "next.js",
+        "width": "75"
       },
-      "css": {
-        "text": "CSS3",
-        "color": "1572B6",
-        "logo": "css3",
-        "width": "57"
-      },
-      "bootstrap": {
-        "text": "BOOTSTRAP",
-        "color": "7952B3",
-        "logo": "bootstrap",
-        "width": "95"
+      "tailwind": {
+        "text": "TAILWIND CSS",
+        "color": "06B6D4",
+        "logo": "tailwind-css",
+        "width": "111"
       }
     },
     "key": 1
