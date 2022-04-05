@@ -1,9 +1,3 @@
-import { useEffect, useContext } from 'react';
-import { useInView } from 'react-intersection-observer';
-
-//ObserverContext
-import { ObserverContext } from '../../context/ObserverContext';
-
 //Components
 import Project from '../Project';
 
@@ -14,21 +8,8 @@ import data from '../../constant/projects.json';
 import { ProjectsStyle, Container, Title, ProjectsList } from './styles';
 
 const Projects = () => {
-  //Observer
-  const { setActiveTap } = useContext(ObserverContext);
-
-  const { ref, inView } = useInView({
-    threshold: 0.5,
-  });
-
-  useEffect(() => {
-    return () => {
-      setActiveTap('projects');
-    };
-  }, [inView]);
-
   return (
-    <ProjectsStyle id="projects" ref={ref}>
+    <ProjectsStyle id="projects">
       <Container className="space-lateral">
         <Title>Portafolio</Title>
         <ProjectsList>

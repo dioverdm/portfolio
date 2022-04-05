@@ -33,7 +33,7 @@ export const Img = styled.img`
   object-fit: cover;
   transition-duration: 1s;
 
-  &:hover {
+  ${Card}:hover & {
     transform: scale(1.1);
   }
 `;
