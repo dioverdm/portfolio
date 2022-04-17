@@ -117,9 +117,8 @@ export const Li = styled.li`
     height: 2px;
     width: 100%;
     transform: ${({ activeTap, tapTitle }) =>
-      activeTap === tapTitle ? 'translateX(0)' : 'translateX(-100%)'};
-    background-color: ${({ activeTap, tapTitle }) =>
-      activeTap === tapTitle && redCherry};
+      activeTap === tapTitle ? 'translateX(0)' : 'translateX(-110%)'};
+    background-color: ${redCherry};
     transition: all 0.5s;
   }
 
