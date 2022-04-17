@@ -33,7 +33,7 @@ export const Title = styled.h1`
     font-weight: 400;
     line-height: 2.5rem;
     color: ${gray};
-    margin: 0 0 5px;
+    margin: 0 0 16px;
   }
 
   &::after {
@@ -42,7 +42,7 @@ export const Title = styled.h1`
     font-weight: 700;
     line-height: 2.5rem;
     color: ${redCherry};
-    margin: 5px 0 0;
+    margin: 16px 0 0;
   }
 
   @media screen and (min-width: 790px) {

@@ -1,12 +1,10 @@
 import styled from 'styled-components';
 import Theme from '../../constant/uiTheme';
 
-const { white, redCherry } = Theme;
+const { white, redCherry, blackIntense } = Theme;
 
 export const Nav = styled.section`
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: ${({ blurActive }) => (blurActive ? 'none' : 'blur(20px)')};
-  box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px;
+  background: ${blackIntense};
   padding: 10px 0;
   position: fixed;
   z-index: 1;
@@ -33,7 +31,6 @@ export const Logo = styled.a`
   font-weight: 800;
   transition-duration: 0.5s;
   padding-bottom: 5px;
-  color: ${({ activeTap, tapTitle }) => activeTap === tapTitle && redCherry};
 
   &:hover {
     color: ${redCherry};
@@ -106,7 +103,7 @@ export const Links = styled.ul`
 `;
 
 export const Tap = styled.span`
-  transition-duration: 0.5s;
+  transition: border 0.5s ease-in-out;
   border-bottom: 2px solid transparent;
   padding-bottom: 5px;
   cursor: pointer;
@@ -124,25 +121,41 @@ export const Tap = styled.span`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled.a`
+  position: relative;
+  display: inline-block;
   padding: 8px 24px;
-  border: 2px solid ${redCherry};
-  border-radius: 30px;
+  border: 2px solid ${white};
+  border-radius: 10px;
   background-color: transparent;
+  text-decoration: none;
   color: ${white};
   font-family: 'Poppins', sans-serif;
   font-size: 3rem;
   font-weight: 700;
   transition-duration: 0.5s;
   cursor: pointer;
+  overflow: hidden;
 
   @media screen and (min-width: 790px) {
     font-size: 1.5rem;
     padding: 8px 16px;
   }
 
-  &:hover {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-color: ${redCherry};
-    text-decoration: none;
+    z-index: -1;
+    transform: translateX(-110%);
+    transition: all 0.5s;
+  }
+
+  &:hover::before {
+    transform: translateX(0);
   }
 `;
