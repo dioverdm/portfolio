@@ -102,26 +102,49 @@ export const Links = styled.ul`
   }
 `;
 
-export const Tap = styled.span`
-  transition: border 0.5s ease-in-out;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 5px;
-  cursor: pointer;
-  color: ${({ activeTap, tapTitle }) => activeTap === tapTitle && redCherry};
-  border-bottom: ${({ activeTap, tapTitle }) =>
-    activeTap === tapTitle && ` 2px solid ${redCherry}`};
+export const Li = styled.li`
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 
-  &:hover {
-    color: ${redCherry};
-    border-bottom: 2px solid ${redCherry};
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    transform: ${({ activeTap, tapTitle }) =>
+      activeTap === tapTitle ? 'translateX(0)' : 'translateX(-100%)'};
+    background-color: ${({ activeTap, tapTitle }) =>
+      activeTap === tapTitle && redCherry};
+    transition: all 0.5s;
   }
 
-  &:nth-child(3) {
-    border: none;
+  &:hover::before {
+    transform: translateX(0);
+  }
+
+  &:nth-child(3)::before {
+    display: none;
   }
 `;
 
-export const Button = styled.a`
+export const Tap = styled.a`
+  position: relative;
+  display: inline-block;
+  transition: border 0.5s ease-in-out;
+  cursor: pointer;
+  color: ${({ activeTap, tapTitle }) => activeTap === tapTitle && redCherry};
+
+  &:hover {
+    color: ${redCherry};
+  }
+`;
+
+export const Button = styled.span`
   position: relative;
   display: inline-block;
   padding: 8px 24px;

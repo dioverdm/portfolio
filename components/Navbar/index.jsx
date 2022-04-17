@@ -1,5 +1,4 @@
 import { useState, useContext } from 'react';
-import Link from 'next/link';
 
 //ObserverContext
 import { ObserverContext } from '../../context/ObserverContext';
@@ -16,8 +15,9 @@ import {
   Burger,
   Bar,
   Links,
-  Button,
+  Li,
   Tap,
+  Button,
 } from './styles';
 
 const Navbar = () => {
@@ -50,24 +50,28 @@ const Navbar = () => {
           <Bar transformTwo={menuState} />
         </Burger>
         <Links showIcon={menuState}>
-          <li>
-            <Link href="#about">
-              <a title="Sobre mí" onClick={changeIcon}>
-                <Tap activeTap={activeTap} tapTitle="about">
-                  Sobre mí
-                </Tap>
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="#projects">
-              <a title="Portafolio" onClick={changeIcon}>
-                <Tap activeTap={activeTap} tapTitle="projects">
-                  Portafolio
-                </Tap>
-              </a>
-            </Link>
-          </li>
+          <Li activeTap={activeTap} tapTitle="about">
+            <Tap
+              href="#about"
+              title="Sobre mí"
+              onClick={changeIcon}
+              activeTap={activeTap}
+              tapTitle="about"
+            >
+              Sobre mí
+            </Tap>
+          </Li>
+          <Li activeTap={activeTap} tapTitle="projects">
+            <Tap
+              href="#projects"
+              title="Portafolio"
+              onClick={changeIcon}
+              activeTap={activeTap}
+              tapTitle="projects"
+            >
+              Portafolio
+            </Tap>
+          </Li>
           <li>
             <Button
               title="joss92821@hotmail.com"
