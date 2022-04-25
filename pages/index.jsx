@@ -61,7 +61,7 @@ export default function Home() {
           name="google-site-verification"
           content="qAWFc7fQ6Gcr1d5vlc-TKfYgqz3_Yl7wGAT_NDUUdBA"
         />
-        <meta property="og:image" content="/image/jose-manuel.webp" />
+        <meta property="og:image" content="https://www.mooenz.me/image/jose-manuel.webp" />
         <link rel="icon" href="/favicon/favicon.webp" />
         <link
           rel="apple-touch-icon"
