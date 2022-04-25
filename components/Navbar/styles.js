@@ -76,6 +76,7 @@ export const Links = styled.ul`
   display: ${({ showIcon }) => (showIcon ? 'flex' : 'none')};
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 50px;
   text-align: center;
   padding: 24px;
@@ -103,8 +104,8 @@ export const Links = styled.ul`
 `;
 
 export const Li = styled.li`
-  height: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
@@ -114,12 +115,22 @@ export const Li = styled.li`
     position: absolute;
     bottom: 3px;
     left: 0;
-    height: 2px;
+    height: 5px;
     width: 100%;
     transform: ${({ activeTap, tapTitle }) =>
       activeTap === tapTitle ? 'translateX(0)' : 'translateX(-110%)'};
     background-color: ${redCherry};
     transition: all 0.5s;
+
+    @media screen and (min-width: 790px) {
+      height: 2px;
+    }
+  }
+
+  &:hover {
+    a {
+      color: ${redCherry};
+    }
   }
 
   &:hover::before {
@@ -128,6 +139,14 @@ export const Li = styled.li`
 
   &:nth-child(3)::before {
     display: none;
+  }
+
+  @media screen and (min-width: 375px) {
+    max-width: 330px;
+  }
+
+  @media screen and (min-width: 790px) {
+    height: 100%;
   }
 `;
 
