@@ -66,48 +66,38 @@
     "key": 3
   },
   {
-    "title": "Landing Page",
-    "type": "prueba técnica",
-    "body": "Este proyecto es el resultado de una prueba técnica. El objetivo de esta prueba era mostrar el nivel de ",
-    "url": "https://mooenz.github.io/prueba-tecnica-landin-page/",
-    "bg": "/image/prueba-tecnica-landing-page.webp",
+    "title": "Prueba Técnica Maquetador Web",
+    "type": "Prueba Técnica",
+    "body": "Esta prueba se realizo con el objetivo de demostrar la capacidad de replicar un sitio partiendo de un diseño previo.",
+    "url": "https://mooenz.github.io/prueba-tecnica-maquetador-web/",
+    "bg": "/image/prueba-tecnica.webp",
     "badge": {
+      "html": {
+        "text": "HTML",
+        "color": "E34F26",
+        "logo": "html5",
+        "width": "59"
+      },
+      "css": {
+        "text": "CSS",
+        "color": "1572B6",
+        "logo": "css3",
+        "width": "51"
+      },
       "scss": {
-        "text": "SASS",
+        "text": "SCSS",
         "color": "CC6699",
         "logo": "sass",
         "width": "59"
       },
       "javascript": {
-        "text": "JAVASCRIPT",
+        "text": "javascript",
         "color": "F7DF1E",
+        "fontColor": "222222",
         "logo": "javascript",
-        "width": "95",
-        "fontColor": "222"
+        "width": "81"
       }
     },
     "key": 4
-  },
-  {
-    "title": "Frontend UX",
-    "type": "prueba técnica",
-    "body": "Esta prueba se realizo con el objetivo de demostrar la capacidad de replicar un sitio partiendo de un diseño previo.",
-    "url": "https://mooenz.github.io/prueba-frontend-ux/",
-    "bg": "/image/prueba-tecnica-frontend-ux.webp",
-    "badge": {
-      "react": {
-        "text": "CREATE REACT APP",
-        "color": "09D3AC",
-        "logo": "Create React App",
-        "width": "137"
-      },
-      "scss": {
-        "text": "SASS",
-        "color": "CC6699",
-        "logo": "sass",
-        "width": "59"
-      }
-    },
-    "key": 5
   }
 ]
