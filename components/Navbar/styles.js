@@ -171,7 +171,7 @@ export const Button = styled.span`
   border-radius: 10px;
   background-color: transparent;
   text-decoration: none;
-  color: ${white};
+  color: ${redCherry};
   font-family: 'Poppins', sans-serif;
   font-size: 3rem;
   font-weight: 700;
@@ -199,6 +199,9 @@ export const Button = styled.span`
 
   &:hover::before {
     transform: translateX(0);
-    box-shadow: 0 0 30px -7px #f53b57;
+  }
+
+  &:hover {
+    color: ${white};
   }
 `;
