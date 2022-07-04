@@ -41,7 +41,7 @@ export const Title = styled.h1`
   }
 
   &::after {
-    content: 'Frontend Developer';
+    content: 'Maquetador Web';
     margin: 16px 0 0;
   }
 

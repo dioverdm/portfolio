@@ -8,7 +8,7 @@ export const Nav = styled.section`
   position: fixed;
   z-index: 1;
   width: 100%;
-  height: 80px;
+  padding: 16px;
 `;
 
 export const Container = styled.nav`
@@ -26,7 +26,6 @@ export const Container = styled.nav`
 `;
 
 export const Logo = styled.a`
-  padding-bottom: 5px;
   font-size: 2.2rem;
   font-weight: 800;
   transition-duration: 0.5s;
@@ -92,7 +91,7 @@ export const Links = styled.ul`
     flex-direction: row;
     position: initial;
     align-items: center;
-    gap: 24px;
+    gap: 0;
     padding: 0;
     font-size: 1.5rem;
     background: none;
@@ -112,7 +111,7 @@ export const Li = styled.li`
   &::before {
     content: '';
     position: absolute;
-    bottom: 15px;
+    bottom: 0;
     left: 0;
     height: 5px;
     width: 100%;
@@ -151,11 +150,12 @@ export const Li = styled.li`
 
 export const Tap = styled.a`
   position: relative;
-  display: inline-block;
-  transition: border 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  transition: color 0.5s;
   cursor: pointer;
   color: ${({ activeTap, tapTitle }) => activeTap === tapTitle && redCherry};
-  transition: color 0.5s;
 
   &:hover {
     color: ${redCherry};
@@ -166,6 +166,7 @@ export const Button = styled.span`
   position: relative;
   display: inline-block;
   padding: 8px 24px;
+  margin: 0 16px;
   border: 2px solid ${redCherry};
   border-radius: 10px;
   background-color: transparent;
@@ -198,5 +199,6 @@ export const Button = styled.span`
 
   &:hover::before {
     transform: translateX(0);
+    box-shadow: 0 0 30px -7px #f53b57;
   }
 `;
