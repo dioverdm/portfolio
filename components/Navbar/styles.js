@@ -5,11 +5,10 @@ const { white, redCherry, blackIntense } = Theme;
 
 export const Nav = styled.section`
   background: ${blackIntense};
-  padding: 10px 0;
   position: fixed;
   z-index: 1;
   width: 100%;
-  height: 70px;
+  height: 80px;
 `;
 
 export const Container = styled.nav`
@@ -27,10 +26,10 @@ export const Container = styled.nav`
 `;
 
 export const Logo = styled.a`
+  padding-bottom: 5px;
   font-size: 2.2rem;
   font-weight: 800;
   transition-duration: 0.5s;
-  padding-bottom: 5px;
 
   &:hover {
     color: ${redCherry};
@@ -113,14 +112,14 @@ export const Li = styled.li`
   &::before {
     content: '';
     position: absolute;
-    bottom: 3px;
+    bottom: 15px;
     left: 0;
     height: 5px;
     width: 100%;
     transform: ${({ activeTap, tapTitle }) =>
       activeTap === tapTitle ? 'translateX(0)' : 'translateX(-110%)'};
     background-color: ${redCherry};
-    transition: all 0.5s;
+    transition-duration: 0.5s;
 
     @media screen and (min-width: 790px) {
       height: 2px;
@@ -156,6 +155,7 @@ export const Tap = styled.a`
   transition: border 0.5s ease-in-out;
   cursor: pointer;
   color: ${({ activeTap, tapTitle }) => activeTap === tapTitle && redCherry};
+  transition: color 0.5s;
 
   &:hover {
     color: ${redCherry};
@@ -166,7 +166,7 @@ export const Button = styled.span`
   position: relative;
   display: inline-block;
   padding: 8px 24px;
-  border: 2px solid ${white};
+  border: 2px solid ${redCherry};
   border-radius: 10px;
   background-color: transparent;
   text-decoration: none;

@@ -72,14 +72,14 @@ const Navbar = () => {
               Portafolio
             </Tap>
           </Li>
-          <li>
+          <Li>
             <Button
               title="joss92821@hotmail.com"
               onClick={() => useClickBoard()}
             >
               Contactarme
             </Button>
-          </li>
+          </Li>
         </Links>
       </Container>
     </Nav>
