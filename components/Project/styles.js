@@ -6,7 +6,7 @@ const { black, blackLight, redCherry, white, gray } = Theme;
 export const Card = styled.article`
   background-color: ${black};
   border-radius: 10px;
-  box-shadow: 0px 10px 30px -7px rgba(34, 34, 34, 0.8);
+  box-shadow: 0px 0px 20px -7px rgba(34, 34, 34, 0.8);
   max-width: 380px;
   border: 1px solid ${blackLight};
   transition-duration: 0.5s;
@@ -14,6 +14,7 @@ export const Card = styled.article`
 
   &:hover {
     border: 1px solid ${redCherry};
+    box-shadow: 0 0 20px -7px #f53b57;
   }
 `;
 
@@ -44,14 +45,14 @@ export const CardContent = styled.section`
 
 export const Type = styled.p`
   color: ${redCherry};
-  font-size: 1.3rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-weight: 700;
 `;
 
 export const Title = styled.h3`
-  font-size: 2rem;
+  font-size: 2.5rem;
 `;
 
 export const Body = styled.p`
