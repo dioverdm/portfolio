@@ -1,9 +1,9 @@
 const Theme = {
-  blackIntense: '#111111',
-  black: '#222222',
-  blackLight: '#333333',
-  gray: '#bbb',
-  white: '#eee',
+  blackIntense: '#151515',
+  black: '#191919',
+  blackLight: '#292929',
+  gray: '#BFBFBF',
+  white: '#FEFEFE',
   redCherry: '#f53b57',
 };
 
