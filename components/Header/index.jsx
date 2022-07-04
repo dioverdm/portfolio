@@ -24,7 +24,7 @@ const header = () => {
   return (
     <Header className="space-lateral" ref={ref}>
       <div>
-        <Title>José M Montaño</Title>
+        <Title title='Hola me llamo Jose Manuel Montaño Saenz y soy Maquetador Web'>José M Montaño</Title>
       </div>
       <Arrow href="#about" title="¿Quieres contratarme?, te invito a conocerme">
         <Container />

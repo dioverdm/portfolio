@@ -27,21 +27,21 @@ export const Title = styled.h1`
   width: 100%;
   text-align: center;
 
-  &::before {
-    content: '¡Hola! me llamo';
+  &::before,
+  &::after {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 2.5rem;
     color: ${gray};
+  }
+
+  &::before {
+    content: '¡Hola! me llamo';
     margin: 0 0 16px;
   }
 
   &::after {
     content: 'Frontend Developer';
-    font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 2.5rem;
-    color: ${redCherry};
     margin: 16px 0 0;
   }
 
@@ -87,6 +87,7 @@ export const Arrow = styled.a`
   position: absolute;
   bottom: 50px;
   transition-duration: 0.5s;
+  box-shadow: 0 0 30px -7px #f53b57;
 
   &:hover {
     transform: scale(1.3);
