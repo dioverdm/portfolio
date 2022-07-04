@@ -22,7 +22,7 @@
     "key": 1
   },
   {
-    "title": "Portafolio Frontend Mentor",
+    "title": "Portafolio Frontendmentor",
     "type": "Proyecto Personal",
     "body": "Este es un buscador que recopila todos los retros concluidos del sitio Frontend Mentor. además están clasificados por Newbie y Junior.",
     "url": "https://frontendmentor-nine.vercel.app/",
@@ -46,7 +46,7 @@
   {
     "title": "Portafolio DevChallenges",
     "type": "Proyecto Personal",
-    "body": "Este es un buscador que recopila todos los retros concluidos del sitio DevChallenges. Solo son proyectos pertenecientes a la categoría Responsive.",
+    "body": "Este es un buscador que recopila todos los retros concluidos del sitio DevChallenges. Los proyectos están clasificados por Beginner, elementary, Intermediate.",
     "url": "https://devchallenges-seven.vercel.app/",
     "bg": "/image/devChallenges.webp",
     "badge": {
