@@ -205,3 +205,7 @@ export const Button = styled.span`
     color: ${white};
   }
 `;
+
+export const DownloadICon = styled.span`
+  
+`;

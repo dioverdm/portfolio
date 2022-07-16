@@ -48,8 +48,16 @@ export const ImageContainer = styled.section`
   place-content: center;
 `;
 
+export const CircleImage = styled.section`
+  padding: 15px;
+  border: 3px solid ${white};
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: ${blackIntense};
+`;
+
 export const BgImage = styled.div`
-  background-color: ${blackLight};
+  background: linear-gradient(180deg, ${white} 0%, ${blackIntense} 80%);
   width: 250px;
   height: 250px;
   border-radius: 50%;
@@ -158,18 +166,19 @@ export const Strong = styled.span`
 `;
 
 export const BtnDownload = styled.div`
-  background-color: ${redCherry};
+  position: relative;
+  width: 250px;
+  margin: 32px 0 0;
+  padding: 25px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 20px -7px ${blackLight};
+  cursor: pointer;
   color: ${white};
   font-size: 2rem;
   font-weight: 700;
-  padding: 8px 16px;
-  border-radius: 10px;
-  border: none;
-  margin: 32px 0 0;
-  cursor: pointer;
-  width: 187px;
-  height: 40px;
-  position: relative;
+  background-color: ${redCherry};
+  transition: 0.5s;
 
   a {
     position: absolute;
@@ -177,12 +186,12 @@ export const BtnDownload = styled.div`
     left: 0;
     right: 0;
     border: 0;
-    height: 40px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   &:hover {
-    opacity: 0.9;
+    box-shadow: 0 0 30px -7px ${redCherry};
   }
 `;

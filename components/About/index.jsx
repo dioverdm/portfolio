@@ -14,6 +14,7 @@ import {
   AboutStyle,
   Container,
   ImageContainer,
+  CircleImage,
   BgImage,
   SocialMedia,
   ImageStyle,
@@ -52,30 +53,32 @@ const About = () => {
     <AboutStyle className="space-lateral" id="about" ref={ref}>
       <Container>
         <ImageContainer>
-          <BgImage>
-            <ImageStyle
-              src="/image/jose-manuel.webp"
-              height={300}
-              width={300}
-              alt="foto de Jose Manuel Montaño Sáenz"
-            />
-          </BgImage>
+          <CircleImage>
+            <BgImage>
+              <ImageStyle
+                src="/image/jose-manuel.webp"
+                height={300}
+                width={300}
+                alt="foto de Jose Manuel Montaño Sáenz"
+              />
+            </BgImage>
+          </CircleImage>
 
           <SocialMedia>
             <IconMedia
               url="https://www.linkedin.com/in/mooenz"
               title="Linkedin"
-              bg="/icons/linkedin.webp"
+              bg="/icons/linkedin.svg"
             />
             <IconMedia
               url="https://twitter.com/MooenzDev"
               title="Twitter"
-              bg="/icons/twitter.webp"
+              bg="/icons/twitter.svg"
             />
             <IconMedia
               url="https://github.com/Mooenz"
               title="Github"
-              bg="/icons/github.webp"
+              bg="/icons/github.svg"
             />
           </SocialMedia>
         </ImageContainer>
@@ -119,7 +122,7 @@ const About = () => {
                 </Paragraph>
                 <BtnDownload>
                   <a href="/Cv-José-M-Montaño.pdf" download>
-                    Descargar CV
+                    Curriculum <span></span>
                   </a>
                 </BtnDownload>
               </>
