@@ -50,10 +50,9 @@ const Navbar = () => {
           <Bar transformTwo={menuState} />
         </Burger>
         <Links showIcon={menuState}>
-          <Li activeTap={activeTap} tapTitle="about">
+          <Li activeTap={activeTap} tapTitle="about" title='¡Conóceme!'>
             <Tap
               href="#about"
-              title="Sobre mí"
               onClick={changeIcon}
               activeTap={activeTap}
               tapTitle="about"
@@ -61,10 +60,9 @@ const Navbar = () => {
               Sobre mí
             </Tap>
           </Li>
-          <Li activeTap={activeTap} tapTitle="projects">
+          <Li activeTap={activeTap} tapTitle="projects" title='¡Se que te agradará!'>
             <Tap
               href="#projects"
-              title="Portafolio"
               onClick={changeIcon}
               activeTap={activeTap}
               tapTitle="projects"

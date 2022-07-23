@@ -13,7 +13,7 @@ export const Icon = styled.a`
   }
 
   @media screen and (min-width: 1220px) {
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
   }
 `;

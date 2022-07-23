@@ -45,7 +45,7 @@ export const CardContent = styled.section`
 
 export const Type = styled.p`
   color: ${redCherry};
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-weight: 700;

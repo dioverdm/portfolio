@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Theme from '../../constant/uiTheme';
 
-const { white, redCherry, blackIntense } = Theme;
+const { white, redCherry, redCherryLight, blackIntense } = Theme;
 
 export const Nav = styled.section`
   background: ${blackIntense};
@@ -108,7 +108,7 @@ export const Li = styled.li`
   position: relative;
   overflow: hidden;
 
-  &::before {
+  &::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -118,7 +118,7 @@ export const Li = styled.li`
     transform: ${({ activeTap, tapTitle }) =>
       activeTap === tapTitle ? 'translateX(0)' : 'translateX(-110%)'};
     background-color: ${redCherry};
-    transition-duration: 0.5s;
+    transition: all 0.5s;
 
     @media screen and (min-width: 790px) {
       height: 2px;
@@ -127,15 +127,18 @@ export const Li = styled.li`
 
   &:hover {
     a {
-      color: ${redCherry};
+      color: ${({ activeTap, tapTitle }) =>
+        activeTap === tapTitle ? redCherry : redCherryLight};
+    }
+
+    &::after {
+      background-color: ${({ activeTap, tapTitle }) =>
+        activeTap === tapTitle ? redCherry : redCherryLight};
+      transform: translateX(0);
     }
   }
 
-  &:hover::before {
-    transform: translateX(0);
-  }
-
-  &:nth-child(3)::before {
+  &:nth-child(3)::after {
     display: none;
   }
 
@@ -205,6 +208,4 @@ export const Button = styled.button`
   }
 `;
 
-export const DownloadICon = styled.span`
-  
-`;
+export const DownloadICon = styled.span``;

@@ -2,7 +2,15 @@ import styled from 'styled-components';
 import Theme from '../../constant/uiTheme';
 import Image from 'next/image';
 
-const { white, black, blackIntense, blackLight, redCherry, gray } = Theme;
+const {
+  white,
+  black,
+  blackIntense,
+  blackLight,
+  redCherry,
+  redCherryLight,
+  gray,
+} = Theme;
 
 export const AboutStyle = styled.section`
   background-color: ${blackIntense};
@@ -27,6 +35,7 @@ export const Container = styled.section`
 
   @media screen and (min-width: 790px) {
     width: 1200px;
+    height: 610px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
   }
@@ -50,14 +59,14 @@ export const ImageContainer = styled.section`
 
 export const CircleImage = styled.section`
   padding: 15px;
-  border: 3px solid ${white};
+  border: 3px solid ${redCherry};
   border-radius: 50%;
   overflow: hidden;
   background-color: ${blackIntense};
 `;
 
 export const BgImage = styled.div`
-  background: linear-gradient(180deg, ${white} 0%, ${blackIntense} 80%);
+  background: linear-gradient(180deg, ${redCherry} 0%, ${blackIntense} 60%);
   width: 250px;
   height: 250px;
   border-radius: 50%;
@@ -99,7 +108,7 @@ export const AboutStyleMe = styled.section`
 `;
 
 export const Title = styled.h2`
-  font-size: 4rem;
+  font-size: 6rem;
   margin: 0 0 24px;
 `;
 
@@ -108,7 +117,6 @@ export const Taplist = styled.ul`
   font-weight: 700;
   display: grid;
   grid-template-columns: repeat(3, auto);
-  gap: 16px;
   margin: 0 0 32px;
   width: 100%;
 
@@ -119,32 +127,42 @@ export const Taplist = styled.ul`
 `;
 
 export const Tap = styled.li`
+  overflow: hidden;
   padding: 8px 0;
+  margin: 0;
   cursor: pointer;
-  border: 2px solid transparent;
   text-align: center;
   position: relative;
   color: ${({ tapState, tapTitle }) =>
     tapState === tapTitle ? redCherry : white};
+  transition: all 0.5s;
 
   &::after {
     content: '';
-    width: 100%;
-    height: 2px;
-    background-color: ${({ tapState, tapTitle }) =>
-      tapState === tapTitle ? redCherry : 'transparent'};
     position: absolute;
     bottom: 0px;
     left: 0px;
-    right: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: ${redCherry};
+    transform: ${({ tapState, tapTitle }) =>
+      tapState === tapTitle ? 'translateX(0)' : 'translateX(-110%)'};
+    transition: all 0.5s;
   }
 
   &:hover {
-    color: ${redCherry};
+    color: ${({ tapState, tapTitle }) =>
+      tapState === tapTitle ? redCherry : redCherryLight};
+
+    &::after {
+      background-color: ${({ tapState, tapTitle }) =>
+        tapState === tapTitle ? redCherry : redCherryLight};
+      transform: translateX(0);
+    }
   }
 
   @media screen and (min-width: 790px) {
-    padding: 8px 16px;
+    padding: 8px 30px;
   }
 `;
 
@@ -167,9 +185,7 @@ export const Strong = styled.span`
 
 export const BtnDownload = styled.div`
   position: relative;
-  width: 250px;
-  margin: 32px 0 0;
-  padding: 25px;
+  width: 100%;
   border-radius: 10px;
   border: none;
   box-shadow: 0 0 20px -7px ${blackLight};
@@ -180,17 +196,28 @@ export const BtnDownload = styled.div`
   background-color: ${redCherry};
   transition: 0.5s;
 
-  a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    border: 0;
+  div {
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 8px;
   }
+
+  a {
+    display: block;
+    height: 50px;
+    gap: 5px;
+  }
+
+  span {
+    display: block;
+    height: 22px;
+    width: 22px;
+    background: url('/icons/download.svg') center/contain no-repeat;
+  }
+
   &:hover {
     box-shadow: 0 0 30px -7px ${redCherry};
   }

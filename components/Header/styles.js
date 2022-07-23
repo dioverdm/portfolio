@@ -38,7 +38,7 @@ export const Title = styled.h1`
   }
 `;
 
-export const P = styled.p`
+export const H2 = styled.h2`
   margin: 8px 0 0;
   font-size: 1.8rem;
   font-weight: 600;

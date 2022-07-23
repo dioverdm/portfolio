@@ -2,7 +2,6 @@
 import { useClickBoard } from '../../hooks/useClickBoard';
 
 //styles
-//styles
 import { FooterStyled, Content, Strong } from './styles';
 
 const Footer = () => {
@@ -17,7 +16,7 @@ const Footer = () => {
             Contácteme aquí
           </Strong>
         </p>
-        <p>Copyright © {YEAR_NOW}</p>
+        
         <p>
           Con 🖤 <b>Mooenz</b>
         </p>

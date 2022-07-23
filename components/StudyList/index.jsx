@@ -8,21 +8,6 @@ const StudyList = () => {
 
   return (
     <>
-      <Section>
-        <Title>En Proceso</Title>
-        <ol>
-          {data.map(
-            ({ name, from, id, state }) =>
-              !state && (
-                <li key={id}>
-                  <Body>
-                    {name} - <Strong>{from}</Strong>
-                  </Body>
-                </li>
-              )
-          )}
-        </ol>
-      </Section>
       <Section >
         <Title>Aprobados</Title>
         <ol>

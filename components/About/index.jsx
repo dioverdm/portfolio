@@ -112,17 +112,21 @@ const About = () => {
             {tapState === 'Perfil' && (
               <>
                 <Paragraph>
-                  <Strong>Maquetador Web</Strong> en constante aprendizaje para
-                  lograr un puesto como Desarrollador Frontend. Me interesan
+                  Soy <Strong>Maquetador Web</Strong> en constante aprendizaje,
+                  con el objetivo de ser Desarrollador Frontend. Me interesan
                   tecnologías como React o Next js.
                 </Paragraph>
                 <Paragraph margin="50px">
-                  Busco un lugar ameno donde me permitan seguir creciendo como
-                  Developer Frontend.
+                  Mi meta a largo plazo (2 años) es ser Full Stack Developer.
+                  Actualmente laboro utilizando herramientas como Bootstrap,
+                  Html, Css y Jquery.
                 </Paragraph>
                 <BtnDownload>
                   <a href="/Cv-José-M-Montaño.pdf" download>
-                    Curriculum <span></span>
+                    <div>
+                      <p>Curriculum</p>
+                      <span></span>
+                    </div>
                   </a>
                 </BtnDownload>
               </>

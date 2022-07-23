@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 import { ObserverContext } from '../../context/ObserverContext';
 
 //Styles
-import { Header, Title, P, Container, Arrow } from './styles';
+import { Header, Title, H2, Container, Arrow } from './styles';
 
 const header = () => {
   //Observer
@@ -25,7 +25,7 @@ const header = () => {
     <Header className="space-lateral" ref={ ref }>
       <div>
         <Title title='Hola me llamo Jose Manuel Montaño Saenz y soy Maquetador Web'>José M Montaño</Title>
-        <P>Maquetador Web</P>
+        <H2>Maquetador Web</H2>
       </div>
       <Arrow href="#about" title="¿Quieres contratarme?, te invito a conocerme">
         <Container />
