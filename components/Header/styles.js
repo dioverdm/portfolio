@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import Theme from '../../constant/uiTheme';
+import styled from "styled-components";
+import Theme from "../../constant/uiTheme";
 
-const { blackIntense, white, gray, redCherry } = Theme;
+const { blackIntense, white, redCherry } = Theme;
 
 export const Header = styled.header`
   position: relative;
@@ -27,52 +27,35 @@ export const Title = styled.h1`
   width: 100%;
   text-align: center;
 
-  &::before,
-  &::after {
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 2.5rem;
-    color: ${gray};
-  }
-
-  &::before {
-    content: '¡Hola! me llamo';
-    margin: 0 0 16px;
-  }
-
-  &::after {
-    content: 'Maquetador Web';
-    margin: 16px 0 0;
-  }
-
   @media screen and (min-width: 790px) {
     font-size: 7rem;
-    line-height: 6.6rem;
-
-    &::before,
-    &::after {
-      font-size: 2rem;
-      line-height: 3rem;
-    }
-
-    &::before {
-      text-align: start;
-    }
-
-    &::after {
-      text-align: end;
-    }
+    line-height: 6.375rem;
   }
 
   @media screen and (min-width: 1220px) {
     font-size: 10rem;
-    line-height: 7.6rem;
+    line-height: 9.375rem;
+  }
+`;
 
-    &::before,
-    &::after {
-      font-size: 2.5rem;
-      line-height: 3.5rem;
-    }
+export const P = styled.p`
+  margin: 8px 0 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  text-align: center;
+  color: ${redCherry};
+
+  @media screen and (min-width: 790px) {
+    margin-right: 3px;
+    font-size: 2rem;
+    line-height: 1.9375rem;
+    text-align: end;
+  }
+
+  @media screen and (min-width: 1220px) {
+    font-size: 2.5rem;
+    line-height: 2.4375rem;
   }
 `;
 
@@ -87,10 +70,24 @@ export const Arrow = styled.a`
   position: absolute;
   bottom: 50px;
   transition-duration: 0.5s;
-  box-shadow: 0 0 30px -7px #f53b57;
+  box-shadow: 0 0 10px 0 ${redCherry};
+  animation: latidos 2s infinite;
 
   &:hover {
     transform: scale(1.3);
+  }
+
+  @keyframes latidos {
+    from {
+      transform: none;
+    }
+    50% {
+      transform: scale(1.4);
+      box-shadow: 0 0 18px 0 ${redCherry};
+    }
+    to {
+      transform: none;
+    }
   }
 `;
 
@@ -98,5 +95,6 @@ export const Container = styled.div`
   display: inline-block;
   height: 28px;
   width: 28px;
-  background: url('/icons/down-arrow.webp') center/contain no-repeat;
+  background: url("/icons/double-arrow-down.svg") center/contain no-repeat;
+  background-size: 35px;
 `;
