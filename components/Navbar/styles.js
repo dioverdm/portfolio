@@ -13,7 +13,7 @@ export const Nav = styled.section`
 
 export const Container = styled.nav`
   width: 100%;
-  height: 100%;
+  height: 55px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -93,7 +93,7 @@ export const Links = styled.ul`
     align-items: center;
     gap: 0;
     padding: 0;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     background: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -152,9 +152,8 @@ export const Tap = styled.a`
   position: relative;
   width: 100%;
   height: 100%;
-  padding: 16px;
+  padding: 16px 30px;
   transition: color 0.5s;
-  cursor: pointer;
   color: ${({ activeTap, tapTitle }) => activeTap === tapTitle && redCherry};
 
   &:hover {
@@ -162,11 +161,11 @@ export const Tap = styled.a`
   }
 `;
 
-export const Button = styled.span`
+export const Button = styled.button`
   position: relative;
   display: inline-block;
   padding: 8px 24px;
-  margin: 0 16px;
+  margin: 0 16px 0 30px;
   border: 2px solid ${redCherry};
   border-radius: 10px;
   background-color: transparent;
@@ -180,7 +179,7 @@ export const Button = styled.span`
   overflow: hidden;
 
   @media screen and (min-width: 790px) {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     padding: 8px 16px;
   }
 
