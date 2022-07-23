@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import Theme from "../../constant/uiTheme";
+import styled from 'styled-components';
+import Theme from '../../constant/uiTheme';
 
 const { blackIntense, white, redCherry } = Theme;
 
@@ -95,6 +95,7 @@ export const Container = styled.div`
   display: inline-block;
   height: 28px;
   width: 28px;
-  background: url("/icons/double-arrow-down.svg") center/contain no-repeat;
+
+  background: url('/icons/double-arrow-down.svg') center/contain no-repeat;
   background-size: 35px;
 `;
