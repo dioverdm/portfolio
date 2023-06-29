@@ -176,6 +176,9 @@ export const Body = styled.div`
 
 export const Paragraph = styled.p`
   margin: ${({ margin }) => (margin ? '0 0 50px' : '0 0 24px')};
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.5px;
 `;
 
 export const Strong = styled.span`

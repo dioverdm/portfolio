@@ -49,16 +49,18 @@ export const Type = styled.p`
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-weight: 700;
+  margin-bottom: 10px;
 `;
 
 export const Title = styled.h3`
   font-size: 2.5rem;
+  line-height: 2.8125rem;
 `;
 
 export const Body = styled.p`
   color: ${gray};
   font-size: 1.5rem;
-  line-height: 2.5rem;
+  line-height: 2.3rem;
   margin: 16px 0 40px;
   letter-spacing: 0.5px;
 `;

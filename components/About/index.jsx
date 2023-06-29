@@ -112,14 +112,10 @@ const About = () => {
             {tapState === 'Perfil' && (
               <>
                 <Paragraph>
-                  Soy <Strong>Maquetador Web</Strong> en constante aprendizaje,
-                  con el objetivo de ser Desarrollador Frontend. Me interesan
-                  tecnologías como React o Next js.
+                ¡Hola! Soy Jose Manuel, un <Strong>desarrollador web</Strong> apasionado. Me especializo en lenguajes de programación como HTML, CSS, JavaScript y jQuery, así como en bibliotecas como Kendo UI.
                 </Paragraph>
                 <Paragraph margin="50px">
-                  Mi meta a largo plazo (2 años) es ser Full Stack Developer.
-                  Actualmente laboro utilizando herramientas como Bootstrap,
-                  Html, Css y Jquery.
+                Desde que comencé mi carrera como desarrollador web, he trabajado en varios proyectos en los que he aprendido a utilizar estas herramientas para crear páginas web dinámicas y atractivas. Me encanta experimentar con nuevas tecnologías y aprender de los desafíos que se presentan en cada proyecto.
                 </Paragraph>
                 <BtnDownload>
                   <a href="/Cv-José-M-Montaño.pdf" download>
