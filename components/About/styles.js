@@ -146,17 +146,17 @@ export const Tap = styled.li`
     height: 2px;
     background-color: ${redCherry};
     transform: ${({ tapState, tapTitle }) =>
-      tapState === tapTitle ? 'translateX(0)' : 'translateX(-110%)'};
+    tapState === tapTitle ? 'translateX(0)' : 'translateX(-110%)'};
     transition: all 0.5s;
   }
 
   &:hover {
     color: ${({ tapState, tapTitle }) =>
-      tapState === tapTitle ? redCherry : redCherryLight};
+    tapState === tapTitle ? redCherry : redCherryLight};
 
     &::after {
       background-color: ${({ tapState, tapTitle }) =>
-        tapState === tapTitle ? redCherry : redCherryLight};
+    tapState === tapTitle ? redCherry : redCherryLight};
       transform: translateX(0);
     }
   }
@@ -187,31 +187,26 @@ export const Strong = styled.span`
 `;
 
 export const BtnDownload = styled.div`
-  position: relative;
   width: 100%;
-  border-radius: 10px;
-  border: none;
-  box-shadow: 0 0 20px -7px ${blackLight};
-  cursor: pointer;
-  color: ${white};
-  font-size: 2rem;
-  font-weight: 700;
-  background-color: ${redCherry};
-  transition: 0.5s;
+  display: flex;
 
-  div {
-    width: 100%;
-    height: 100%;
+  a {
+    position: relative;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 20px -7px ${blackLight};
+    color: ${white};
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: ${redCherry};
+    transition: 0.5s;
+
+
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
-  }
-
-  a {
-    display: block;
-    height: 50px;
-    gap: 5px;
+    padding: 12px 48px;
   }
 
   span {
@@ -221,7 +216,7 @@ export const BtnDownload = styled.div`
     background: url('/icons/download.svg') center/contain no-repeat;
   }
 
-  &:hover {
+  a:hover {
     box-shadow: 0 0 30px -7px ${redCherry};
   }
 `;

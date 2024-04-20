@@ -50,16 +50,17 @@ const About = () => {
   };
 
   return (
-    <AboutStyle className="space-lateral" id="about" ref={ref}>
+    <AboutStyle className="space-lateral" id="about" ref={ ref }>
       <Container>
         <ImageContainer>
           <CircleImage>
             <BgImage>
               <ImageStyle
                 src="/image/jose-manuel.webp"
-                height={300}
-                width={300}
+                height={ 300 }
+                width={ 300 }
                 alt="foto de Jose Manuel Montaño Sáenz"
+                priority={false}
               />
             </BgImage>
           </CircleImage>
@@ -88,31 +89,31 @@ const About = () => {
           <Taplist>
             <Tap
               tapTitle="Perfil"
-              tapState={tapState}
-              onClick={() => tapToggle('Perfil')}
+              tapState={ tapState }
+              onClick={ () => tapToggle('Perfil') }
             >
               Perfil
             </Tap>
             <Tap
               tapTitle="Estudios"
-              tapState={tapState}
-              onClick={() => tapToggle('Estudios')}
+              tapState={ tapState }
+              onClick={ () => tapToggle('Estudios') }
             >
               Estudios
             </Tap>
-            <Tap
+            {/* <Tap
               tapTitle="Skills"
-              tapState={tapState}
-              onClick={() => tapToggle('Skills')}
+              tapState={ tapState }
+              onClick={ () => tapToggle('Skills') }
             >
               Skills
-            </Tap>
+            </Tap> */}
           </Taplist>
           <Body>
-            {tapState === 'Perfil' && (
+            { tapState === 'Perfil' && (
               <>
                 <Paragraph>
-                <Strong>Desarrollador web</Strong> con 2 años de experiencia. En mi día a día trabajo mancomunadamente con el area de diseño para crear paginas web atractivas y funcionales.
+                  <Strong>Desarrollador web</Strong> con 2 años de experiencia. En mi día a día trabajo mancomunadamente con el area de diseño para crear paginas web atractivas y funcionales.
                 </Paragraph>
 
                 <Paragraph margin="50px">
@@ -121,16 +122,14 @@ const About = () => {
 
                 <BtnDownload>
                   <a href="/Cv-José-M-Montaño.pdf" download>
-                    <div>
-                      <p>Curriculum</p>
-                      <span></span>
-                    </div>
+                    Curriculum
+                    <span></span>
                   </a>
                 </BtnDownload>
               </>
-            )}
-            {tapState === 'Estudios' && <StudyList />}
-            {tapState === 'Skills' && <Skills />}
+            ) }
+            { tapState === 'Estudios' && <StudyList /> }
+            {/* { tapState === 'Skills' && <Skills /> } */}
           </Body>
         </AboutStyleMe>
       </Container>
