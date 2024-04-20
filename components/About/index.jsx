@@ -112,11 +112,13 @@ const About = () => {
             {tapState === 'Perfil' && (
               <>
                 <Paragraph>
-                ¡Hola! Soy Jose Manuel, un <Strong>desarrollador web</Strong> apasionado. Me especializo en lenguajes de programación como HTML, CSS, JavaScript y jQuery, así como en bibliotecas como Kendo UI.
+                <Strong>Desarrollador web</Strong> con 2 años de experiencia. En mi día a día trabajo mancomunadamente con el area de diseño para crear paginas web atractivas y funcionales.
                 </Paragraph>
+
                 <Paragraph margin="50px">
-                Desde que comencé mi carrera como desarrollador web, he trabajado en varios proyectos en los que he aprendido a utilizar estas herramientas para crear páginas web dinámicas y atractivas. Me encanta experimentar con nuevas tecnologías y aprender de los desafíos que se presentan en cada proyecto.
+                  Me gustaría trabajar como frontend developer en react.js o vue.js, aunque, estoy dispuesto a aprender cualquier tecnología que me permita crecer como profesional.
                 </Paragraph>
+
                 <BtnDownload>
                   <a href="/Cv-José-M-Montaño.pdf" download>
                     <div>
