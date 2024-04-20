@@ -60,7 +60,7 @@ const About = () => {
                 height={ 300 }
                 width={ 300 }
                 alt="foto de Jose Manuel Montaño Sáenz"
-                priority={false}
+                priority={true}
               />
             </BgImage>
           </CircleImage>
