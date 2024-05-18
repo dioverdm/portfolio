@@ -1,27 +1,5 @@
 [
   {
-    "title": "@udiservicios s.a.s",
-    "type": "cliente",
-    "body": "Esta pagina web fue desarrollada con el fin de dar a conocer la empresa, canalizar clientes por medio de un formulario y números telefónicos.",
-    "url": "https://www.audiservicios.com.co/",
-    "bg": "/image/@udiservicios.webp",
-    "badge": {
-      "next": {
-        "text": "NEXT.JS",
-        "color": "000000",
-        "logo": "next.js",
-        "width": "75"
-      },
-      "tailwind": {
-        "text": "TAILWIND CSS",
-        "color": "06B6D4",
-        "logo": "tailwind-css",
-        "width": "111"
-      }
-    },
-    "key": 1
-  },
-  {
     "title": "Portafolio Frontendmentor",
     "type": "Proyecto Personal",
     "body": "Este es un buscador que recopila todos los retros concluidos del sitio Frontend Mentor. además están clasificados por Newbie y Junior.",
@@ -41,7 +19,7 @@
         "width": "153"
       }
     },
-    "key": 2
+    "key": 1
   },
   {
     "title": "Portafolio DevChallenges",
@@ -63,7 +41,7 @@
         "width": "153"
       }
     },
-    "key": 3
+    "key": 2
   },
   {
     "title": "Prueba Técnica Maquetador Web",
@@ -98,6 +76,6 @@
         "width": "81"
       }
     },
-    "key": 4
+    "key": 3
   }
 ]
