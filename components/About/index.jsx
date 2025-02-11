@@ -92,7 +92,7 @@ const About = () => {
               tapState={ tapState }
               onClick={ () => tapToggle('Perfil') }
             >
-              Perfil
+              Profile
             </Tap>
             <Tap
               tapTitle="Estudios"
