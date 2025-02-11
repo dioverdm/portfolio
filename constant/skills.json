@@ -1,15 +1,13 @@
 [
   { "name": "html", "icon": "./icons/html5.webp", "id": 1 },
   { "name": "css", "icon": "./icons/css3.webp", "id": 2 },
-  { "name": "scss", "icon": "./icons/scss.webp", "id": 3 },
-  { "name": "tailwind css", "icon": "./icons/tailwindcss.webp", "id": 4 },
-  { "name": "bootstrap", "icon": "./icons/bootstrap.webp", "id": 5 },
-  {
-    "name": "styled-components",
-    "icon": "./icons/styled-components.webp",
-    "id": 6
-  },
-  { "name": "javascript", "icon": "./icons/javascript.webp", "id": 7 },
-  { "name": "react.js", "icon": "./icons/reactjs.webp", "id": 8 },
-  { "name": "next.js", "icon": "./icons/nextjs.webp", "id": 9 }
+  { "name": "tailwind css", "icon": "./icons/tailwindcss.webp", "id": 3 },
+  { "name": "typescrypt", "icon": "./icons/typescrypt.svg", "id": 4 },
+  { "name": "python", "icon": "./icons/python.svg", "id": 5 },
+  { "name": "javascript", "icon": "./icons/javascript.webp", "id": 6 },
+  { "name": "react.js", "icon": "./icons/reactjs.webp", "id": 7 },
+  { "name": "next.js", "icon": "./icons/nextjs.webp", "id": 8 },
+  { "name": "npm", "icon": "./icons/npm.png", "id": 9 },
+  { "name": "mongodb", "icon": "./icons/mongodb.png", "id": 10 },
+  { "name": "mysql", "icon": "./icons/mysql.png", "id": 11 }
 ]
