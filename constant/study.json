@@ -4,34 +4,34 @@
     "from": "Platzi",
     "state": true,
     "id": 1,
-    "url": "https://platzi.com/p/Mooenz/curso/1789-asincronismo-js/diploma/detalle/"
+    "url": "https://platzi.com/"
   },
   {
     "name": "Curso de Fundamentos de Node.js",
     "from": "Plazi",
     "state": true,
-    "id": 0,
-    "url": "https://platzi.com/p/Mooenz/curso/1759-fundamentos-node/diploma/detalle/"
+    "id": 4,
+    "url": "https://platzi.com/"
   },
   {
     "name": "Curso de Frontend Developer",
     "from": "Platzi",
     "state": true,
     "id": 2,
-    "url": "https://platzi.com/p/Mooenz/curso/2467-frontend-developer/diploma/detalle/"
+    "url": "https://platzi.com/"
   },
   {
     "name": "Curso Definitivo de HTML y CSS",
     "from": "Platzi",
     "state": true,
     "id": 3,
-    "url": "https://platzi.com/p/Mooenz/curso/2008-html-css/diploma/detalle/"
+    "url": "https://platzi.com/"
   },
   {
-    "name": "Ingeniero de Sistemas",
-    "from": "U. Cooperativa de Colombia",
+    "name": "Estudiando Ing. informática",
+    "from": "UPTJAA",
     "state": true,
-    "id": 4,
+    "id": 0,
     "url": ""
   }
 ]
