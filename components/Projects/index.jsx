@@ -11,7 +11,7 @@ const Projects = () => {
   return (
     <ProjectsStyle id="projects">
       <Container className="space-lateral">
-        <Title>Portafolio</Title>
+        <Title>Portfolio</Title>
         <ProjectsList>
           {data.map(({ title, type, body, url, bg, badge, key }) => (
             <Project
