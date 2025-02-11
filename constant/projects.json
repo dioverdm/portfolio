@@ -1,81 +1,24 @@
 [
   {
-    "title": "Portafolio Frontendmentor",
-    "type": "Proyecto Personal",
-    "body": "Este es un buscador que recopila todos los retros concluidos del sitio Frontend Mentor. además están clasificados por Newbie y Junior.",
-    "url": "https://frontendmentor-nine.vercel.app/",
-    "bg": "/image/frontendmentor.webp",
+    "title": "My Portfolio v1",
+    "type": "Personal Project",
+    "body": "This is my first portfolio with a responsive and friendly design, it is currently becoming a personal open source project.",
+    "url": "https://dioverdm.vercel.app/",
+    "bg": "/image/https___dioverdm.jpeg",
     "badge": {
       "next": {
-        "text": "NEXT.JS",
+        "text": "REACT.JS",
         "color": "000000",
-        "logo": "next.js",
+        "logo": "react.js",
         "width": "75"
       },
       "styled-components": {
-        "text": "STYLED COMPONENTS",
+        "text": "CSS",
         "color": "DB7093",
-        "logo": "styled-components",
+        "logo": "css",
         "width": "153"
       }
     },
     "key": 1
-  },
-  {
-    "title": "Portafolio DevChallenges",
-    "type": "Proyecto Personal",
-    "body": "Este es un buscador que recopila todos los retros concluidos del sitio DevChallenges. Los proyectos están clasificados por Beginner, elementary, Intermediate.",
-    "url": "https://devchallenges-seven.vercel.app/",
-    "bg": "/image/devChallenges.webp",
-    "badge": {
-      "next": {
-        "text": "NEXT.JS",
-        "color": "000000",
-        "logo": "next.js",
-        "width": "75"
-      },
-      "styled-components": {
-        "text": "STYLED COMPONENTS",
-        "color": "DB7093",
-        "logo": "styled-components",
-        "width": "153"
-      }
-    },
-    "key": 2
-  },
-  {
-    "title": "Prueba Técnica Maquetador Web",
-    "type": "Prueba Técnica",
-    "body": "Esta prueba se realizo con el objetivo de demostrar la capacidad de replicar un sitio partiendo de un diseño previo.",
-    "url": "https://mooenz.github.io/prueba-tecnica-maquetador-web/",
-    "bg": "/image/prueba-tecnica.webp",
-    "badge": {
-      "html": {
-        "text": "HTML",
-        "color": "E34F26",
-        "logo": "html5",
-        "width": "59"
-      },
-      "css": {
-        "text": "CSS",
-        "color": "1572B6",
-        "logo": "css3",
-        "width": "51"
-      },
-      "scss": {
-        "text": "SCSS",
-        "color": "CC6699",
-        "logo": "sass",
-        "width": "59"
-      },
-      "javascript": {
-        "text": "javascript",
-        "color": "F7DF1E",
-        "fontColor": "222222",
-        "logo": "javascript",
-        "width": "81"
-      }
-    },
-    "key": 3
   }
 ]
