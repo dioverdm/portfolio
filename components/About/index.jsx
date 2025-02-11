@@ -121,7 +121,7 @@ const About = () => {
                 </Paragraph>
 
                 <BtnDownload>
-                  <a href="/Cv-José-M-Montaño.pdf" download>
+                  <a href="/CVDioverRivero.pdf" download>
                     Download CV
                     <span></span>
                   </a>
