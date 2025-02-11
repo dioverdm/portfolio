@@ -41,8 +41,8 @@ const Navbar = () => {
   return (
     <Nav blurActive={menuState}>
       <Container className="space-lateral">
-        <Logo href="#" activeTap={activeTap} tapTitle="home" title="inicio">
-          Mooenz
+        <Logo href="#" activeTap={activeTap} tapTitle="home" title="home">
+          DM
         </Logo>
         <Burger onClick={changeIcon}>
           <Bar transformOne={menuState} />
@@ -50,32 +50,32 @@ const Navbar = () => {
           <Bar transformTwo={menuState} />
         </Burger>
         <Links showIcon={menuState}>
-          <Li activeTap={activeTap} tapTitle="about" title='¡Conóceme!'>
+          <Li activeTap={activeTap} tapTitle="about" title='Get to know me!'>
             <Tap
               href="#about"
               onClick={changeIcon}
               activeTap={activeTap}
               tapTitle="about"
             >
-              Sobre mí
+              About me
             </Tap>
           </Li>
-          <Li activeTap={activeTap} tapTitle="projects" title='¡Se que te agradará!'>
+          <Li activeTap={activeTap} tapTitle="projects" title="I know you'll like it!">
             <Tap
               href="#projects"
               onClick={changeIcon}
               activeTap={activeTap}
               tapTitle="projects"
             >
-              Portafolio
+              Portfolio
             </Tap>
           </Li>
           <Li>
             <Button
-              title="joss92821@hotmail.com"
+              title="hola@dioverdm.com"
               onClick={() => useClickBoard()}
             >
-              Contactarme
+              Contact me
             </Button>
           </Li>
         </Links>
