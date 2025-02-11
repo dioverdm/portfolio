@@ -4,7 +4,7 @@ import { ServerStyleSheet } from 'styled-components';
 class MyDocument extends Document {
   render() {
     return (
-      <Html lang="es">
+      <Html lang="en">
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
