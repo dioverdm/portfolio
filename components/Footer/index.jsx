@@ -11,14 +11,7 @@ const Footer = () => {
     <FooterStyled>
       <Content className="space-lateral">
         <p>
-          Trabajemos juntos{' '}
-          <Strong title="joss92821@hotmail.com" onClick={() => useClickBoard()}>
-            Contácteme aquí
-          </Strong>
-        </p>
-        
-        <p>
-          Con 🖤 <b>Mooenz</b>
+          With 🖤 <b>by Dioverdm</b>
         </p>
       </Content>
     </FooterStyled>
