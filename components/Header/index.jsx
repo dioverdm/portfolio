@@ -24,10 +24,10 @@ const header = () => {
   return (
     <Header className="space-lateral" ref={ ref }>
       <div>
-        <Title title='Hola me llamo Jose Manuel Montaño Saenz y soy Maquetador Web'>José M Montaño</Title>
-        <H2>Maquetador Web</H2>
+        <Title title='Hello, my name is Diover Rivero and I am a frontend and backend developer.'>Diover Rivero</Title>
+        <H2>Frontend Developer</H2>
       </div>
-      <Arrow href="#about" title="¿Quieres contratarme?, te invito a conocerme">
+      <Arrow href="#about" title="Do you want to hire me? I invite you to meet me">
         <Container />
       </Arrow>
     </Header>
