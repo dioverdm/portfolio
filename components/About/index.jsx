@@ -74,7 +74,7 @@ const About = () => {
             <IconMedia
               url="https://threads.net/@dioverdm"
               title="Threads"
-              bg="/icons/twitter.svg"
+              bg="/icons/threads.svg"
             />
             <IconMedia
               url="https://github.com/dioverdm"
