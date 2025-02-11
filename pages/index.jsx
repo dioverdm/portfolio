@@ -22,21 +22,21 @@ export default function Home() {
         />
         <meta
           name="description"
-          content="Maquetador Web en constante aprendizaje para lograr un puesto como Desarrollador Frontend. Me interesan tecnologías como React o Next js. Busco un lugar ameno donde me permitan seguir creciendo como Developer Frontend."
+          content="I am Diover Rivero, a passionate programmer and web designer/developer, as well as the founder of Pogo AI Studio. I specialize in creating innovative solutions that combine technology and creativity to transform education and programming. Through my projects, I aim to provide interactive and functional experiences that optimize learning and interaction on the web."
         />
         <meta
           name="keywords"
-          content="desarrollador, web, reactjs, nextjs, html, css, js, javascript, web developer, desarrollador web, maquetador, frontend, desarrollador frontend"
+          content="desarrollador, web, reactjs, nextjs, html, css, js, javascript, web developer, desarrollador web, maquetador, frontend, desarrollador frontend, developer, desarrollador backend, backend, backend developer, frontend developer, DioverDM, Diover Rivero, Diover, Rivero"
         />
         <meta name="msapplication-TileColor" content="#f53b57" />
         <meta name="theme-color" content="#ffffff"></meta>
         <meta name="robots" content="index,follow" />
-        <meta name="author" content="Jose Manuel Montaño Saenz, Mooenz" />
-        <meta name="copyright" content="Mooenz" />
+        <meta name="author" content="Diover Rivero, DioverDM" />
+        <meta name="copyright" content="DioverDM" />
         <meta httpEquiv="expires" content="43200" />
         {/* twitter card */}
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@MooenzDev" />
+        <meta name="twitter:site" content="@dioverdm" />
         <meta
           name="twitter:title"
           content="Desarrollador Frontend y Maquetador web - Mooenz"
@@ -48,13 +48,13 @@ export default function Home() {
         {/* open graph card */}
         <meta
           property="og:title"
-          content="Desarrollador Frontend y Maquetador web - Mooenz"
+          content="Diover Rivero | DioverDM | Frontend and backend developer"
         />
-        <meta property="og:site_name" content="mooenz.me" />
-        <meta property="og:url" content="https://www.mooenz.me/" />
+        <meta property="og:site_name" content="dioverdm.com" />
+        <meta property="og:url" content="https://www.dioverdm.com/" />
         <meta
           property="og:description"
-          content="Maquetador Web en constante aprendizaje para lograr un puesto como Desarrollador Frontend. Me interesan tecnologías como React o Next js. Busco un lugar ameno donde me permitan seguir creciendo como Developer Frontend."
+          content="I am Diover Rivero, a passionate programmer and web designer/developer, as well as the founder of Pogo AI Studio. I specialize in creating innovative solutions that combine technology and creativity to transform education and programming. Through my projects, I aim to provide interactive and functional experiences that optimize learning and interaction on the web."
         />
         <meta property="og:type" content="article" />
         <meta
@@ -86,8 +86,8 @@ export default function Home() {
           href="/favicon/safari-pinned-tab.webp"
           color="#f53b57"
         />
-        <link rel="canonical" href="https://www.mooenz.me/" />
-        <title>Desarrollador Frontend y Maquetador web - Mooenz</title>
+        <link rel="canonical" href="https://www.dioverdm.com/" />
+        <title>Diover Rivero | DioverDM | Frontend and backend developer</title>
       </Head>
       <UseObserver>
         <Navbar />
