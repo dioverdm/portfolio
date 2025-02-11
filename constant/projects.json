@@ -9,14 +9,14 @@
       "next": {
         "text": "REACT.JS",
         "color": "000000",
-        "logo": "react.js",
+        "logo": "reactjs",
         "width": "75"
       },
       "styled-components": {
         "text": "CSS",
         "color": "DB7093",
         "logo": "css",
-        "width": "153"
+        "width": "75"
       }
     },
     "key": 1
