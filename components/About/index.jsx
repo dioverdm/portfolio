@@ -56,7 +56,7 @@ const About = () => {
           <CircleImage>
             <BgImage>
               <ImageStyle
-                src="/image/jose-manuel.webp"
+                src="/image/foto_perfil.jpg"
                 height={ 300 }
                 width={ 300 }
                 alt="Photo by Diover Rivero (DioverDM)"
