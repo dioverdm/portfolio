@@ -59,7 +59,7 @@ const About = () => {
                 src="/image/jose-manuel.webp"
                 height={ 300 }
                 width={ 300 }
-                alt="foto de Jose Manuel Montaño Sáenz"
+                alt="Photo by Diover Rivero (DioverDM)"
                 priority={true}
               />
             </BgImage>
@@ -67,17 +67,17 @@ const About = () => {
 
           <SocialMedia>
             <IconMedia
-              url="https://www.linkedin.com/in/mooenz"
+              url="https://www.linkedin.com/in/dioverdm"
               title="Linkedin"
               bg="/icons/linkedin.svg"
             />
             <IconMedia
-              url="https://twitter.com/MooenzDev"
-              title="Twitter"
+              url="https://threads.net/@dioverdm"
+              title="Threads"
               bg="/icons/twitter.svg"
             />
             <IconMedia
-              url="https://github.com/Mooenz"
+              url="https://github.com/dioverdm"
               title="Github"
               bg="/icons/github.svg"
             />
@@ -85,7 +85,7 @@ const About = () => {
         </ImageContainer>
 
         <AboutStyleMe>
-          <Title>Sobre mí</Title>
+          <Title>About me</Title>
           <Taplist>
             <Tap
               tapTitle="Perfil"
@@ -99,37 +99,37 @@ const About = () => {
               tapState={ tapState }
               onClick={ () => tapToggle('Estudios') }
             >
-              Estudios
+              Studies
             </Tap>
-            {/* <Tap
+            <Tap
               tapTitle="Skills"
               tapState={ tapState }
               onClick={ () => tapToggle('Skills') }
             >
               Skills
-            </Tap> */}
+            </Tap>
           </Taplist>
           <Body>
             { tapState === 'Perfil' && (
               <>
                 <Paragraph>
-                  <Strong>Desarrollador web</Strong> con 2 años de experiencia. En mi día a día trabajo mancomunadamente con el area de diseño para crear paginas web atractivas y funcionales.
+                  <Strong>Web Developer</Strong> With more than 2 years of experience, I usually work with the design area to create attractive and functional web pages.
                 </Paragraph>
 
                 <Paragraph margin="50px">
-                  Me gustaría trabajar como frontend developer en react.js o vue.js, aunque, estoy dispuesto a aprender cualquier tecnología que me permita crecer como profesional.
+                  I like web development, video games, sports and animals. My current hobbies are sports, music and development. My goals are to master JavaScript with CSS to the maximum and continue learning more about Front-End technologies.
                 </Paragraph>
 
                 <BtnDownload>
                   <a href="/Cv-José-M-Montaño.pdf" download>
-                    Curriculum
+                    Download CV
                     <span></span>
                   </a>
                 </BtnDownload>
               </>
             ) }
             { tapState === 'Estudios' && <StudyList /> }
-            {/* { tapState === 'Skills' && <Skills /> } */}
+            { tapState === 'Skills' && <Skills /> }
           </Body>
         </AboutStyleMe>
       </Container>
