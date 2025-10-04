@@ -39,7 +39,7 @@ export default function Home() {
         <meta name="twitter:site" content="@dioverdm" />
         <meta
           name="twitter:title"
-          content="Desarrollador Frontend y Maquetador web - Mooenz"
+          content="Desarrollador Frontend y Maquetador web - DioverDM"
         />
         <meta
           name="twitter:description"
@@ -61,7 +61,7 @@ export default function Home() {
           name="google-site-verification"
           content="qAWFc7fQ6Gcr1d5vlc-TKfYgqz3_Yl7wGAT_NDUUdBA"
         />
-        <meta property="og:image" content="https://www.mooenz.me/image/jose-manuel.webp" />
+        <meta property="og:image" content="https://dioverdm2.vercel.app/image/foto_perfil.jpg" />
         <link rel="icon" href="/favicon/favicon.webp" />
         <link
           rel="apple-touch-icon"
