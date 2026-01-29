@@ -56,6 +56,33 @@ const GlobalStyles = createGlobalStyle`
   ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(180deg, ${primaryLight} 0%, ${accent} 100%);
   }
+
+// En GlobalStyles.js, dentro de createGlobalStyle
+@keyframes float-footer {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-10px) rotate(120deg);
+  }
+  66% {
+    transform: translateY(10px) rotate(240deg);
+  }
+}
+
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
+}
   /* scroll */
 
   /* Clases de utilidad */
